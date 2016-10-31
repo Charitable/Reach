@@ -2,7 +2,7 @@
  * When the home is the posts page (default install).
  */
 .home.blog {
-    #main {         
+    #main {
         @include border-top( $size__margin-half, $color__accent );
     }
 
@@ -36,6 +36,10 @@ body.page-template-homepage {
         }
 
         a {
+            @include color( $color__text-overlay );
+        }
+
+        a:hover{
             @include color( $color__text );
         }
     }
@@ -43,11 +47,11 @@ body.page-template-homepage {
     .feature-block {
         @include padding-top( $size__margin-triple );
         border: none;
-        border-radius: 0;        
+        border-radius: 0;
         box-shadow: none;
-        text-align: center;       
+        text-align: center;
         overflow: visible;
-    }       
+    }
 
     .page-title {
         padding: 0;
@@ -62,9 +66,9 @@ body.page-template-homepage {
 
         .button {
             @include margin( $size__margin, 3, 0 );
-        }       
-    }    
-    
+        }
+    }
+
     .campaigns-grid {
         @include font-size();
         @include line-height();
@@ -89,5 +93,5 @@ body.page-template-homepage {
     body.page-template-homepage .campaigns-grid-wrapper {
         @include padding-right( $size__margin-triple );
         @include padding-left( $size__margin-triple );
-    }     
+    }
 }
