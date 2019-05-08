@@ -1,6 +1,6 @@
 .stripped {
 	#page {
-		@include padding-top( $size__margin-triple );		
+		@include padding-top( $size__margin-triple );
 	}
 
 	.site-identity {
@@ -16,12 +16,12 @@
 	#main {
 		@include padding( 0, 0, $size__margin-triple );
 		@include background-color( $color__background-content );
-	}	
+	}
 
 	.entry-block {
 		@include background-color( $color__background-content );
 		margin: 0;
-		padding: 0;		
+		padding: 0;
 		border: none;
 		border-radius: 0 0 0.4rem 0.4rem;
 		box-shadow: none;

@@ -3739,6 +3739,9 @@ body > .select2-container--open .select2-dropdown--above {
   #charitable-donation-form .set-donation-amount,
   #charitable-donation-amount-form .set-donation-amount {
     clear: left; }
+  #charitable-donation-form .charitable-donation-options,
+  #charitable-donation-amount-form .charitable-donation-options {
+    padding: 0; }
   #charitable-donation-form .donation-amounts .donation-amount,
   #charitable-donation-amount-form .donation-amounts .donation-amount {
     width: 100%;
@@ -3977,19 +3980,26 @@ body > .select2-container--open .select2-dropdown--above {
     position: relative;
     z-index: 1; }
 
-#charitable-user-fields {
+#charitable-user-fields,
+#charitable-meta-fields {
+  padding: 14px 0px;
+  padding: 1.4rem 0rem;
+  margin: 0;
   border-top: none; }
 
 #charitable-user-fields,
 #charitable-gateway-fields .charitable-gateway-fields {
   float: left;
+  position: relative;
   left: -42px;
   width: -webkit-calc( 100% + 84px );
   width: -moz-calc( 100% + 84px );
   width: calc( 100% + 84px );
   padding: 28px 42px;
   padding: 2.8rem 4.2rem;
-  background-color: #f9f9fa; }
+  background-color: #f9f9fa;
+  margin-bottom: 14px;
+  margin-bottom: 1.4rem; }
   #charitable-user-fields select,
   #charitable-user-fields input,
   #charitable-gateway-fields .charitable-gateway-fields select,
@@ -3999,6 +4009,17 @@ body > .select2-container--open .select2-dropdown--above {
     border-width: 0.2rem;
     border-style: solid;
     border-color: #e3e5e6; }
+
+#charitable-donor-fields > .charitable-form-fields > .charitable-form-field {
+  float: none;
+  width: 100%;
+  padding: 14px 0px;
+  padding: 1.4rem 0rem;
+  margin: 0; }
+
+#charitable-meta-fields .charitable-form-field {
+  float: none;
+  width: 100%; }
 
 #charitable-gateway-selector {
   padding: 14px 0px;
@@ -4048,16 +4069,23 @@ body > .select2-container--open .select2-dropdown--above {
 #charitable-donation-form-modal-loop #custom-donation-amount-field {
   width: 100%; }
 
-@media screen and (max-width: 37.5em) {
-  #charitable-donation-form,
-  #charitable-donation-amount-form {
+@media (max-width: 45em) {
+  .stripped #charitable-donation-form,
+  .stripped #charitable-donation-amount-form {
     padding: 0; }
-
-  #charitable-gateway-fields .charitable-gateway-fields {
-    width: 100%; }
-
-  #charitable-user-fields {
-    width: 100%; } }
+  .stripped #charitable-user-fields,
+  .stripped #charitable-gateway-fields .charitable-gateway-fields {
+    left: -28px;
+    width: -webkit-calc( 100% + 56px );
+    width: -moz-calc( 100% + 56px );
+    width: calc( 100% + 56px );
+    padding: 28px;
+    padding: 2.8rem; } }
+@media (min-width: 45em) {
+  .stripped.campaign-donation #main {
+    padding: 0; }
+  .stripped.campaign-donation .entry {
+    padding: 0; } }
 /*--------------------------------------------------------------
 18.1.3 Widgets
 --------------------------------------------------------------*/

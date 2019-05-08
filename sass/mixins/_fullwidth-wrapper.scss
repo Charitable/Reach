@@ -7,7 +7,7 @@
 
 @mixin fullwidth-wrapper( $padding: $size__margin-triple, $small_padding: $size__margin-double ) {
 	position: relative;
-	// @include fullwidth-calc( $small_padding );	
+	// @include fullwidth-calc( $small_padding );
 	@include bp( 800 ) {
 		@include fullwidth-calc( $padding );
 	}
@@ -15,8 +15,8 @@
 
 @mixin fullwidth-wrapper-padded( $padding: $size__margin-triple, $small_padding: $size__margin-double, $extra_padding: 9 ) {
 	position: relative;
-	// @include fullwidth-calc( $small_padding );	
+	// @include fullwidth-calc( $small_padding );
 	@include bp( 800 ) {
 		@include fullwidth-calc( $padding + $extra_padding );
-	}	
+	}
 }
