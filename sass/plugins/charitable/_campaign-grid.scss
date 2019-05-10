@@ -85,6 +85,11 @@
 		box-shadow: 0 0 0 1px;
 	}
 
+	.campaign-image {
+		position: relative;
+        @include fullwidth-calc( $size__margin );
+	}
+
 	@include bp( 600 ) {
 		.campaign {
 			border: none !important;

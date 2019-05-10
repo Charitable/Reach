@@ -5,7 +5,7 @@
  * @package     Reach
  * @version     1.0.0
  * @author      Eric Daams
- * @copyright   Copyright (c) 2014, Studio 164a
+ * @copyright   Copyright (c) 2019, Studio 164a
  * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
@@ -89,5 +89,3 @@ remove_action( 'charitable_campaign_content_before', 'charitable_template_campai
  */
 add_action( 'charitable_campaign_content_after', 'reach_template_campaign_after_content_widget_area', 10 );
 add_action( 'charitable_campaign_content_after', 'reach_template_campaign_comments', 12 );
-
-

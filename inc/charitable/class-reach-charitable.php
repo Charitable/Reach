@@ -5,7 +5,7 @@
  * @package     Reach/Classes/Reach_Charitable
  * @version     1.0.0
  * @author      Eric Daams
- * @copyright   Copyright (c) 2014, Studio 164a
+ * @copyright   Copyright (c) 2019, Studio 164a
  * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; // Exit if accessed directly

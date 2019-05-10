@@ -4178,6 +4178,12 @@ body.campaign-widget {
   max-width: 100%;
   border: none;
   box-shadow: 0 0 0 1px; }
+.campaign-loop.campaign-grid .campaign-image {
+  position: relative;
+  left: -14px;
+  width: -webkit-calc( 100% + 28px );
+  width: -moz-calc( 100% + 28px );
+  width: calc( 100% + 28px ); }
 @media (min-width: 37.5em) {
   .campaign-loop.campaign-grid .campaign {
     border: none !important; }

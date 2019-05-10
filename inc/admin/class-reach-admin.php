@@ -5,7 +5,7 @@
  * @package     Reach/Classes/Reach_Admin
  * @version     1.0.0
  * @author      Eric Daams
- * @copyright   Copyright (c) 2015, Studio 164a
+ * @copyright   Copyright (c) 2019, Studio 164a
  * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
@@ -128,11 +128,11 @@ if ( ! class_exists( 'Reach_Admin' ) ) :
 		<div class="column-left">
 			<div class="column-inside">
 				<h2><?php _e( 'Built for Fundraising', 'reach' ) ?></h2>
-				<p><?php _e( 'We built Reach to help non-profits & social entrepreneurs run beautiful online fundraising campaigns. Install Charitable to start accepting donations today.', 'reach' ) ?></p> 
+				<p><?php _e( 'We built Reach to help non-profits & social entrepreneurs run beautiful online fundraising campaigns. Install Charitable to start accepting donations today.', 'reach' ) ?></p>
 				<p>
 				<?php if ( class_exists( 'Charitable' ) ) : ?>
 					<p style="color: #79ba49; font-weight: bolder;"><span class="dashicons dashicons-yes"></span><?php _e( 'Charitable is installed', 'reach' ) ?></p>
-				<?php else : ?>            
+				<?php else : ?>
 					<p><a href="<?php echo wp_nonce_url( self_admin_url( 'update.php?action=install-plugin&plugin=charitable' ), 'install-plugin_charitable' ) ?>" class="button button-primary" title="<?php _e( 'Install Charitable', 'reach' ) ?>" alt="<?php _e( 'Install Charitable', 'reach' ) ?>"><?php _e( 'Install Charitable', 'reach' ) ?></a></p>
 				<?php endif ?>
 				<hr />
@@ -154,20 +154,20 @@ if ( ! class_exists( 'Reach_Admin' ) ) :
 					<li>
 						<p><?php _e( '<strong>Ninja Forms</strong> by the WP Ninjas is a free form plugin. It features a robust form builder to allow you to create powerful forms for your site.', 'reach' ) ?></p>
 						<p><a href="https://wordpress.org/plugins/ninja-forms/" title="<?php _e( 'Ninja Forms WordPress.org page', 'reach' ) ?>" alt="<?php _e( 'Ninja Forms WordPress.org page', 'reach' ) ?>"><?php _e( 'View Ninja Forms', 'reach' ) ?></a></p>
-					</li>                
+					</li>
 					<li class="premium">
 						<div class="upgrade-tag"><?php _e( 'Paid Upgrades', 'reach' ) ?></div>
 						<ul>
-							<li><p><?php printf( __( '<a href="%s"><strong>Charitable Ambassadors</strong></a> transforms your website into a peer-to-peer fundraising or crowdfunding platform, with front-end campaign submissions.', 'reach' ), 'https://www.wpcharitable.com/extensions/charitable-ambassadors/?utm_source=reach-welcome-page&amp;utm_medium=wordpress-dashboard&amp;utm_campaign=upgrades' ) ?></p></li> 
+							<li><p><?php printf( __( '<a href="%s"><strong>Charitable Ambassadors</strong></a> transforms your website into a peer-to-peer fundraising or crowdfunding platform, with front-end campaign submissions.', 'reach' ), 'https://www.wpcharitable.com/extensions/charitable-ambassadors/?utm_source=reach-welcome-page&amp;utm_medium=wordpress-dashboard&amp;utm_campaign=upgrades' ) ?></p></li>
 							<li><p><?php printf( __( '<a href="%s"><strong>Charitable Stripe</strong></a> allows you to accept credit card donations securely on your website.', 'reach' ), 'https://www.wpcharitable.com/extensions/charitable-stripe/?utm_source=reach-welcome-page&amp;utm_medium=wordpress-dashboard&amp;utm_campaign=upgrades' ) ?></p></li>
-							<li><p><?php printf( __( '<a href="%s"><strong>Charitable Authorize.Net</strong></a> allows your to accept donations through your Authorize.Net account, securely on your website.', 'reach' ), 'https://www.wpcharitable.com/extensions/charitable-authorize-net/?utm_source=reach-welcome-page&amp;utm_medium=wordpress-dashboard&amp;utm_campaign=upgrades' ) ?></p></li>                        
+							<li><p><?php printf( __( '<a href="%s"><strong>Charitable Authorize.Net</strong></a> allows your to accept donations through your Authorize.Net account, securely on your website.', 'reach' ), 'https://www.wpcharitable.com/extensions/charitable-authorize-net/?utm_source=reach-welcome-page&amp;utm_medium=wordpress-dashboard&amp;utm_campaign=upgrades' ) ?></p></li>
 						</ul>
 					</li>
 				</ul>
-			</div>        
+			</div>
 		</div>
 		<div class="column-right">
-			<div class="column-inside">            
+			<div class="column-inside">
 				<h2><?php _e( 'Documentation', 'reach' ) ?></h2>
 				<ul class="docs">
 					<li><a href="http://demo.wpcharitable.com/reach/documentation/customizer-settings/?utm_source=reach-welcome-page&amp;utm_medium=wordpress-dashboard&amp;utm_campaign=documentation"><?php _e( 'Customizer settings', 'reach' ) ?></a></li>
@@ -185,7 +185,7 @@ if ( ! class_exists( 'Reach_Admin' ) ) :
 					'https://translate.wordpress.org/projects/wp-themes/reach'
 				) ?>
 				</p>
-			</div>    
+			</div>
 		</div>
 	</div>
 

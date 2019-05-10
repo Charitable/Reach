@@ -1,14 +1,14 @@
-# <!=Copyright (C) 2017 WP Charitable
+# <!=Copyright (C) 2019 WP Charitable
 # This file is distributed under the GNU General Public License v2 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Reach 1.0.12\n"
+"Project-Id-Version: Reach 1.1.1\n"
 "Report-Msgid-Bugs-To: https://www.wpcharitable.com/\n"
-"POT-Creation-Date: 2017-11-17 04:51:39+00:00\n"
+"POT-Creation-Date: 2019-05-08 23:36:52+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
 "Last-Translator: WP-Translations (http://wp-translations.org/)\n"
 "Language-Team: WP-Translations <wpt@wp-translations.org>\n"
 "Language: en_US\n"
@@ -22,7 +22,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-Bookmarks: \n"
 "X-Textdomain-Support: yes\n"
-"X-Generator: grunt-wp-i18n1.0.1\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
 
 #: 404.php:17
 msgid "Sorry, but you've hit a dead end."
@@ -32,11 +32,11 @@ msgstr ""
 msgid "Go home"
 msgstr ""
 
-#: archive-campaign.php:36
+#: archive-campaign.php:30
 msgid "Older Campaigns"
 msgstr ""
 
-#: archive-campaign.php:36
+#: archive-campaign.php:30
 msgid "Newer Campaigns"
 msgstr ""
 
@@ -49,14 +49,17 @@ msgid "Bio"
 msgstr ""
 
 #: author.php:37
+#: charitable/charitable-ambassadors/widget-campaign-creator.php:52
 msgid "Visit %s's website"
 msgstr ""
 
 #: author.php:43
+#: charitable/charitable-ambassadors/widget-campaign-creator.php:57
 msgid "Visit %s's Twitter profile"
 msgstr ""
 
 #: author.php:49
+#: charitable/charitable-ambassadors/widget-campaign-creator.php:63
 msgid "Visit %s's Facebook profile"
 msgstr ""
 
@@ -106,6 +109,31 @@ msgstr ""
 
 #: charitable/charitable-ambassadors/edit-campaign-link.php:30
 msgid "Edit campaign"
+msgstr ""
+
+#: charitable/charitable-ambassadors/widget-campaign-creator.php:37
+msgid "profile"
+msgstr ""
+
+#: charitable/charitable-ambassadors/widget-campaign-creator.php:41
+msgid "%d campaign"
+msgid_plural "%d campaigns"
+msgstr[0] ""
+msgstr[1] ""
+
+#: charitable/charitable-ambassadors/widget-campaign-creator.php:52
+#: inc/functions/comments.php:21 inc/functions/comments.php:22
+msgid "Website"
+msgstr ""
+
+#: charitable/charitable-ambassadors/widget-campaign-creator.php:57
+#: inc/functions/helper-functions.php:109
+msgid "Twitter"
+msgstr ""
+
+#: charitable/charitable-ambassadors/widget-campaign-creator.php:63
+#: inc/functions/helper-functions.php:99
+msgid "Facebook"
 msgstr ""
 
 #: comments-campaign.php:20
@@ -373,7 +401,7 @@ msgstr ""
 msgid "Footer Text"
 msgstr ""
 
-#: inc/admin/class-reach-customizer.php:416 inc/class-reach-theme.php:598
+#: inc/admin/class-reach-customizer.php:416 inc/class-reach-theme.php:612
 msgid "Footer"
 msgstr ""
 
@@ -501,61 +529,54 @@ msgstr ""
 msgid "Dashboard"
 msgstr ""
 
-#: inc/charitable/functions/template-tags.php:31
-msgid "Categories"
-msgstr ""
-
-#: inc/charitable/functions/template-tags.php:32
-msgid "All"
-msgstr ""
-
-#: inc/charitable/functions/template-tags.php:58
+#: inc/charitable/functions/template-tags.php:22
 msgid "<span>Campaign</span> has ended"
 msgstr ""
 
-#: inc/class-reach-theme.php:405
+#: inc/class-reach-theme.php:407
+#. translators: %s: link
 msgid ""
 "Thanks for choosing Reach! You can read hints and tips on how get the most "
 "out of your new theme on the <a href=\"%s\">welcome screen</a>."
 msgstr ""
 
-#: inc/class-reach-theme.php:409
+#: inc/class-reach-theme.php:412
 msgid "Get started with Reach"
 msgstr ""
 
-#: inc/class-reach-theme.php:449
+#: inc/class-reach-theme.php:450
 msgid "Primary Menu"
 msgstr ""
 
-#: inc/class-reach-theme.php:568
+#: inc/class-reach-theme.php:576
 msgid "Default sidebar"
 msgstr ""
 
-#: inc/class-reach-theme.php:569
+#: inc/class-reach-theme.php:577
 msgid "The default sidebar."
 msgstr ""
 
-#: inc/class-reach-theme.php:578
+#: inc/class-reach-theme.php:588
 msgid "Campaign sidebar"
 msgstr ""
 
-#: inc/class-reach-theme.php:579
+#: inc/class-reach-theme.php:589
 msgid "The campaign sidebar."
 msgstr ""
 
-#: inc/class-reach-theme.php:588
+#: inc/class-reach-theme.php:600
 msgid "Campaign below content"
 msgstr ""
 
-#: inc/class-reach-theme.php:589
+#: inc/class-reach-theme.php:601
 msgid "Displayed below the campaign's content, but above the comment section."
 msgstr ""
 
-#: inc/class-reach-theme.php:773
+#: inc/class-reach-theme.php:795
 msgid "Page %s"
 msgstr ""
 
-#: inc/class-reach-theme.php:859
+#: inc/class-reach-theme.php:886
 msgid "Continue Reading"
 msgstr ""
 
@@ -591,10 +612,6 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
-#: inc/functions/comments.php:21 inc/functions/comments.php:22
-msgid "Website"
-msgstr ""
-
 #: inc/functions/comments.php:25 inc/functions/comments.php:26
 msgid "Email"
 msgstr ""
@@ -613,10 +630,6 @@ msgstr ""
 
 #: inc/functions/comments.php:115
 msgid "Author"
-msgstr ""
-
-#: inc/functions/helper-functions.php:99
-msgid "Facebook"
 msgstr ""
 
 #: inc/functions/helper-functions.php:100
@@ -653,10 +666,6 @@ msgstr ""
 
 #: inc/functions/helper-functions.php:108
 msgid "Tumblr"
-msgstr ""
-
-#: inc/functions/helper-functions.php:109
-msgid "Twitter"
 msgstr ""
 
 #: inc/functions/helper-functions.php:110
@@ -755,7 +764,7 @@ msgstr ""
 msgid "Latest Projects"
 msgstr ""
 
-#: partials/campaign-grid.php:31
+#: partials/campaign-grid.php:29
 msgid "Previous Campaigns"
 msgstr ""
 
@@ -873,7 +882,8 @@ msgctxt "status for campaign"
 msgid "Status: %s"
 msgstr ""
 
-#: inc/class-reach-theme.php:854
+#: inc/class-reach-theme.php:878
+#. translators: %s: post title
 msgctxt "keep reading post"
 msgid "Keep reading %s"
 msgstr ""

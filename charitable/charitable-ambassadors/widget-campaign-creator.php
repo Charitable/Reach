@@ -34,11 +34,11 @@ endif;
 	<a href="<?php echo get_author_posts_url( $creator->ID ) ?>"><?php echo $creator->get_avatar() ?></a>
 	<div class="creator-summary">
 		<h6 class="creator-name">
-            	<a href="<?php echo get_author_posts_url( $creator->ID ) ?>" title="<?php echo esc_attr( sprintf( "%s's %s", $creator->get_name(), __( 'profile', 'charitable-ambassadors' ) ) ) ?>">
+            	<a href="<?php echo get_author_posts_url( $creator->ID ) ?>" title="<?php echo esc_attr( sprintf( "%s's %s", $creator->get_name(), __( 'profile', 'reach' ) ) ) ?>">
                     <?php echo $creator->display_name ?>
                 </a>
             </h6>
-		<p><?php printf( _n( '%d campaign', '%d campaigns', $campaigns->post_count, 'charitable-ambassadors' ), $campaigns->post_count ) ?></p>
+		<p><?php printf( _n( '%d campaign', '%d campaigns', $campaigns->post_count, 'reach' ), $campaigns->post_count ) ?></p>
 	</div>
 	<?php if ( strlen( $creator->description ) ) : ?>
 		<div class="creator-bio">
@@ -49,24 +49,24 @@ endif;
 		<ul class="creator-links">
 			<?php if ( $creator->user_url ) : ?>
 				<li>
-					<a href="<?php echo esc_url( $creator->user_url ) ?>" title="<?php echo esc_attr( printf( __( "Visit %s's website", 'charitable-ambassadors' ), $creator->get_name() ) ) ?>" target="_blank"><?php _e( 'Website', 'charitable-ambassadors' ) ?></a>
+					<a href="<?php echo esc_url( $creator->user_url ) ?>" title="<?php echo esc_attr( printf( __( "Visit %s's website", 'reach' ), $creator->get_name() ) ) ?>" target="_blank"><?php _e( 'Website', 'reach' ) ?></a>
 				</li>
 			<?php endif ?>
 			<?php if ( $creator->twitter ) : ?>
 				<li>
-					<a href="<?php echo esc_url( $creator->twitter ) ?>" title="<?php echo esc_attr( sprintf( __( "Visit %s's Twitter profile", 'charitable-ambassadors' ), $creator->get_name() ) ) ?>" target="_blank"><?php _e( 'Twitter', 'charitable-ambassadors' ) ?></a>
+					<a href="<?php echo esc_url( $creator->twitter ) ?>" title="<?php echo esc_attr( sprintf( __( "Visit %s's Twitter profile", 'reach' ), $creator->get_name() ) ) ?>" target="_blank"><?php _e( 'Twitter', 'reach' ) ?></a>
 				</li>
 			<?php endif ?>
 
 			<?php if ( $creator->facebook ) : ?>
 				<li>
-					<a href="<?php echo esc_url( $creator->facebook ) ?>" title="<?php echo esc_attr( sprintf( __( "Visit %s's Facebook profile", 'charitable-ambassadors' ), $creator->get_name() ) ) ?>" class="with-icon" data-icon="&#xf09a;" target="_blank"><?php _e( 'Facebook', 'charitable-ambassadors' ) ?>
+					<a href="<?php echo esc_url( $creator->facebook ) ?>" title="<?php echo esc_attr( sprintf( __( "Visit %s's Facebook profile", 'reach' ), $creator->get_name() ) ) ?>" class="with-icon" data-icon="&#xf09a;" target="_blank"><?php _e( 'Facebook', 'reach' ) ?>
 					</a>
 				</li>
 			<?php endif ?>
 		</ul>
 	<?php endif ?>
-</div>    
+</div>
 <?php
 
 echo $view_args['after_widget'];

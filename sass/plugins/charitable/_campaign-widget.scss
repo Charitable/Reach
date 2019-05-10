@@ -17,7 +17,7 @@
     }
 
     .block-title {
-        padding: 0;     
+        padding: 0;
         border: 0;
     }
 
@@ -26,16 +26,16 @@
         text-shadow: none;
     }
 
-    .campaign-stats, 
+    .campaign-stats,
     .meta {
         position: relative;
-        @include fullwidth-calc( $size__margin-double );  
+        @include fullwidth-calc( $size__margin-double );
         @include bp( 600 ) {
             @include fullwidth-calc( $size__margin );
         }
     }
 
-    .campaign-stats {       
+    .campaign-stats {
         @include padding( $size__margin-half, 0 );
         margin: 0;
         @include border-top( 1 );
@@ -48,12 +48,12 @@
             display: inline-block;
             @include padding( 0, 7, 0, 11 );
             margin: 0;
-            @include border-left( 1 );            
+            @include border-left( 1 );
             @include font-size ( $font__font-size-small );
-            font-style: italic;     
+            font-style: italic;
             span {
                 display: block;
-                @include padding-top( 2 );              
+                @include padding-top( 2 );
                 @include font-size;
                 @include color( $color__accent );
                 font-family: $font__secondary;
@@ -66,9 +66,9 @@
             @include height( 36 );
             border: none;
             vertical-align: top;
-        }   
+        }
     }
-}   
+}
 
 body.campaign-widget {
     padding: 0;
@@ -80,7 +80,7 @@ body.campaign-widget {
         text-overflow: ellipsis;
         display: -webkit-box;
         -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;        
+        -webkit-box-orient: vertical;
     }
 }
 
