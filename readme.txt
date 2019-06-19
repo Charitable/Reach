@@ -4,7 +4,7 @@ Donate link: https://www.wpcharitable.com
 Tags: blue, light, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-colors, custom-menu, featured-images, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
 Requires at least: 4.2
 Tested up to: 5.2
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -91,6 +91,9 @@ Copyright © 2008-2012 Dmitry Baranovskiy (http://raphaeljs.com)
 Copyright © 2008-2012 Sencha Labs (http://sencha.com)
 
 == Change Log ==
+
+= 1.1.2 - 10/05/2019 =
+* Fixed issue with images in campaign grids getting stretched out of proportion.
 
 = 1.1.1 - 09/05/2019 =
 * Fixed problem with multiple textdomains.
