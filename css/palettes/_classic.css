@@ -4274,6 +4274,9 @@ body.campaign-widget {
   margin-bottom: 2.8rem; }
   .campaign-grid.campaign-grid-2 .campaign.hentry:nth-child(2n+2) {
     margin-right: 0; }
+@media (max-width: 37.5em) {
+  .campaign-grid.campaign-grid-2 .campaign.hentry {
+    width: 100% !important; } }
 
 .campaign-grid.campaign-grid-3 .campaign.hentry {
   width: 31.33%; }
@@ -4281,6 +4284,17 @@ body.campaign-widget {
     margin-right: 1.9%; }
   .campaign-grid.campaign-grid-3 .campaign.hentry:nth-child(3n+3) {
     margin-right: 0; }
+@media (max-width: 57.5em) {
+  .campaign-grid.campaign-grid-3 .campaign.hentry {
+    width: 48%;
+    margin-right: 1.9%;
+    margin-bottom: 28px;
+    margin-bottom: 2.8rem; }
+    .campaign-grid.campaign-grid-3 .campaign.hentry:nth-child(2n+2) {
+      margin-right: 0; } }
+@media (max-width: 37.5em) {
+  .campaign-grid.campaign-grid-3 .campaign.hentry {
+    width: 100% !important; } }
 
 .campaign-grid.campaign-grid-4 .campaign.hentry {
   width: 23.1%; }
@@ -4288,6 +4302,24 @@ body.campaign-widget {
     margin-right: 1.9%; }
   .campaign-grid.campaign-grid-4 .campaign.hentry:nth-child(4n+4) {
     margin-right: 0; }
+@media (max-width: 93.75em) {
+  .campaign-grid.campaign-grid-4 .campaign.hentry {
+    width: 31.33%; }
+    .campaign-grid.campaign-grid-4 .campaign.hentry:nth-child(2n+2) {
+      margin-right: 1.9%; }
+    .campaign-grid.campaign-grid-4 .campaign.hentry:nth-child(3n+3) {
+      margin-right: 0; } }
+@media (max-width: 56.25em) {
+  .campaign-grid.campaign-grid-4 .campaign.hentry {
+    width: 48%;
+    margin-right: 1.9%;
+    margin-bottom: 28px;
+    margin-bottom: 2.8rem; }
+    .campaign-grid.campaign-grid-4 .campaign.hentry:nth-child(2n+2) {
+      margin-right: 0; } }
+@media (max-width: 37.5em) {
+  .campaign-grid.campaign-grid-4 .campaign.hentry {
+    width: 100% !important; } }
 
 /*--------------------------------------------------------------
 18.1.5 Campaign Page
