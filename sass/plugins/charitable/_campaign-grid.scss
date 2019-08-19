@@ -143,12 +143,42 @@
 
 .campaign-grid.campaign-grid-2 {
 	@include grid-2();
+
+	@include bp( 600, false ) {
+		.campaign.hentry {
+			width: 100% ! important;
+		}
+	}
 }
 
 .campaign-grid.campaign-grid-3 {
 	@include grid-3();
+
+	@include bp( 920, false ) {
+		@include grid-2();
+	}
+
+	@include bp( 600, false ) {
+		.campaign.hentry {
+			width: 100% ! important;
+		}
+	}
 }
 
 .campaign-grid.campaign-grid-4 {
 	@include grid-4();
+
+	@include bp( 1500, false ) {
+		@include grid-3();
+	}
+
+	@include bp( 900, false ) {
+		@include grid-2();
+	}
+
+	@include bp( 600, false ) {
+		.campaign.hentry {
+			width: 100% ! important;
+		}
+	}
 }
