@@ -16,7 +16,7 @@ get_header();
 
 ?>
 
-<main id="main" class="site-main site-content cf">      
+<main id="main" class="site-main site-content cf">
 
 <?php
 
@@ -34,7 +34,7 @@ if ( have_posts() ) :
 		 */
 		do_action( 'charitable_single_campaign_before', $campaign );
 
-		?>              
+		?>
 		<div class="layout-wrapper">
 			<div id="primary" class="content-area <?php if ( ! is_active_sidebar( 'sidebar_campaign' ) ) : ?>no-sidebar<?php endif ?>">
 				<?php

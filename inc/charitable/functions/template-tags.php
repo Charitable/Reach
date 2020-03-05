@@ -92,6 +92,25 @@ if ( ! function_exists( 'reach_template_campaign_title' ) ) :
 
 endif;
 
+if ( ! function_exists( 'reach_template_campaign_action_buttons' ) ) :
+
+	/**
+	 * Display the Donate and potentialy the Fundraise & Join Team buttons.
+	 *
+	 * @param  Charitable_Campaign $campaign
+	 * @return void
+	 * @since  1.2.0
+	 */
+	function reach_template_campaign_action_buttons( Charitable_Campaign $campaign ) {
+		?>
+		<div class="campaign-action-buttons">
+			<?php do_action( 'reach_campaign_action_buttons', $campaign ); ?>
+		</div>
+		<?php
+	}
+
+endif;
+
 if ( ! function_exists( 'reach_template_campaign_featured_image' ) ) :
 
 	/**

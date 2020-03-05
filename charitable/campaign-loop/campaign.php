@@ -41,12 +41,12 @@ $campaign = charitable_get_current_campaign();
 	/**
 	 * @hook charitable_campaign_content_loop_after_title
 	 */
-	do_action( 'charitable_campaign_content_loop_after_title', $campaign );
+	do_action( 'charitable_campaign_content_loop_after_title', $campaign, $view_args );
 
 	/**
 	 * @hook charitable_campaign_content_loop_after
 	 */
-	do_action( 'charitable_campaign_content_loop_after', $campaign );
+	do_action( 'charitable_campaign_content_loop_after', $campaign, $view_args );
 
 	?>
 </li>

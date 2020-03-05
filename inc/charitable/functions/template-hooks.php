@@ -55,13 +55,24 @@ add_action( 'charitable_campaign_summary_before', 'reach_template_campaign_media
  * @see reach_template_campaign_stats
  */
 add_action( 'charitable_campaign_summary', 'charitable_template_campaign_finished_notice', 2 );
-add_action( 'charitable_campaign_summary', 'charitable_template_donate_button', 2 );
+add_action( 'charitable_campaign_summary', 'reach_template_campaign_action_buttons', 2 );
 add_action( 'charitable_campaign_summary', 'reach_template_campaign_progress_barometer', 4 );
 add_action( 'charitable_campaign_summary', 'reach_template_campaign_stats', 6 );
 remove_action( 'charitable_campaign_summary', 'charitable_template_campaign_percentage_raised', 4 );
 remove_action( 'charitable_campaign_summary', 'charitable_template_campaign_donation_summary', 6 );
 remove_action( 'charitable_campaign_summary', 'charitable_template_campaign_donor_count', 8 );
+remove_action( 'charitable_campaign_summary_before', 'charitable_ambassadors_fundraiser_details', 100 );
+
+/**
+ * Add the Donate & maybe Fundraise & Join Team buttons.
+ *
+ * @see charitable_template_donate_button
+ * @see charitable_ambassadors_fundraiser_button_in_summary
+ */
+add_action( 'reach_campaign_action_buttons', 'charitable_template_donate_button', 2 );
+add_action( 'reach_campaign_action_buttons', 'charitable_ambassadors_fundraiser_button_in_summary', 4 );
 remove_action( 'charitable_campaign_summary', 'charitable_template_donate_button', 12 );
+remove_action( 'charitable_campaign_summary', 'charitable_ambassadors_fundraiser_button_in_summary', 13 );
 
 /**
  * Single campaign, after summary.
@@ -76,6 +87,7 @@ add_action( 'charitable_campaign_summary_after', 'reach_template_campaign_share'
  * @see reach_template_campaign_media_before_content
  */
 add_action( 'charitable_campaign_content_before', 'reach_template_campaign_media_before_content', 6 );
+add_action( 'charitable_campaign_content_before', 'charitable_ambassadors_fundraiser_details', 8 );
 remove_action( 'charitable_campaign_content_before', 'charitable_ambassadors_template_edit_campaign_link', 2 );
 remove_action( 'charitable_campaign_content_before', 'charitable_template_campaign_description', 4 );
 remove_action( 'charitable_campaign_content_before', 'charitable_videos_template_campaign_video', 5 );

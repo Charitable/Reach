@@ -19,7 +19,7 @@
         p:last-child {
             margin-bottom: 0;
         }
-    }   
+    }
 
     .campaign-video {
         .fit-video {
@@ -34,31 +34,42 @@
     }
 
     .campaign-image {
-        @include fullwidth-calc( $size__margin-double );        
+        @include fullwidth-calc( $size__margin-double );
     }
 
     .wp-post-image {
         width: 100%;
     }
 
-    .campaign-details {     
+    .campaign-details {
         position: relative;
         @include fullwidth-calc( $size__margin-double );
-        @include padding( $size__margin-triple, 0, 0 );        
+        @include padding( $size__margin-triple, 0, 0 );
     }
 
     .campaign-donation {
-        @include padding( 0, 0, $size__margin-double );     
+        @include padding( 0, 0, $size__margin-double );
     }
 
-    .donate-button {            
-        margin: 0;
-        height: 100%;           
-        @include padding( $size__margin, 20 );
+    .campaign-action-buttons {
+      display: flex;
+      margin: 0.3rem auto 4.2rem auto;
+      width: 40rem;
+
+      > * {
+        flex: auto;
+        display: inline-block;
+        padding: 0;
+        text-align: center;
+      }
+
+      .charitable-button {
         @include font-size( 25 );
+        @include padding( $size__margin, 20 );
         &:hover {
             @include color( $color__text-overlay );
         }
+      }
     }
 
     .campaign-finished {
@@ -71,7 +82,7 @@
     }
 
     .barometer {
-        position: relative; 
+        position: relative;
         float: left;
         @include margin( 0, $size__margin );
         z-index: 30;
@@ -103,13 +114,13 @@
         margin-bottom: 0;
         list-style: none;
         text-align: center;
-            
-        li {            
+
+        li {
             @include padding-bottom( $size__margin );
             @include margin-bottom( $size__margin );
             border-bottom: {
-                @include width( 1 ); 
-                style: solid; 
+                @include width( 1 );
+                style: solid;
                 color: rgba(255, 255, 255, 0.3);
             }
             @include font-size( $font__font-size-big );
@@ -142,7 +153,7 @@
     .campaign-sharing {
         position: relative;
         @include fullwidth-calc( $size__margin-double );
-        @include padding( $size__margin, 0, 0, 0 );        
+        @include padding( $size__margin, 0, 0, 0 );
         text-align: center;
         border-top: {
             @include width( 1 );
@@ -153,7 +164,7 @@
         h6 {
             @include margin( 0, 10 );
             @include line-height( 22px );
-        }       
+        }
 
         li {
             width: auto !important;
@@ -168,7 +179,7 @@
             &:before {
                 @include color( $color__text-overlay );
             }
-        }       
+        }
     }
 
     @include bp( 440 ) {
@@ -178,19 +189,19 @@
             left: auto;
             width: 100%;
             @include max-width( 540 );
-        }        
+        }
     }
 
     @include bp ( 800 ) {
         @include margin-bottom( $size__margin-triple );
-        
+
         .campaign-video,
         .campaign-image {
             left: 0;
-            width: 55%;            
+            width: 55%;
             float: left;
             @include padding-right( $size__margin-triple );
-        
+
             .wp-post-image {
                 border: {
                     @include width( 5 );
@@ -205,7 +216,7 @@
         .campaign-details {
             float: left;
             padding: 0;
-            margin: 0.3rem 0 0 0;      
+            margin: 0.3rem 0 0 0;
             width: 45%;
         }
 
@@ -213,7 +224,7 @@
             margin-left: 0;
         }
 
-        .campaign-stats {            
+        .campaign-stats {
             li {
                 padding-right: 0;
             }
@@ -227,46 +238,46 @@
     }
 
     @include bp( 988 ) {
-        .campaign-video, 
+        .campaign-video,
         .campaign-image {
             width: -moz-calc(100% - 40rem);
             width: -webkit-calc(100% - 40rem);
             width: calc(100% - 40rem);
         }
 
-        .campaign-details, 
+        .campaign-details,
         .campaign-sharing {
             width: 40rem;
-        }        
+        }
     }
 }
 
 @include bp( 1422 ) {
-    .layout-wide {    
-        .campaign-video, 
+    .layout-wide {
+        .campaign-video,
         .campaign-image {
             @include width( 952 ); // Ensures that the image maxes out at 910
         }
 
-        .campaign-details, 
+        .campaign-details,
         .campaign-sharing {
             float: right;
             width: -moz-calc(100% - 95.2rem);
             width: -webkit-calc(100% - 95.2rem);
-            width: calc(100% - 95.2rem);           
+            width: calc(100% - 95.2rem);
         }
     }
 }
 
 .campaign-summary.campaign-has-goal {
     .campaign-stats {
-        float: right;       
+        float: right;
         width: -webkit-calc(100% - #{146 + $size__margin * 2}px);
         width: -moz-calc(100% - #{146 + $size__margin * 2}px);
-        width: calc(100% - #{146 + $size__margin * 2}px);       
+        width: calc(100% - #{146 + $size__margin * 2}px);
         text-align: right;
 
-        li {            
+        li {
             @include bp ( 880, false ) {
                 @include padding-right( $size__margin );
             }
@@ -283,7 +294,7 @@
     .campaign-sharing {
         float: none;
         margin-left: auto;
-    }    
+    }
 }
 
 /* Countdown */
@@ -293,8 +304,8 @@
     .modal {
         text-align: left;
     }
-    
-    .modal, 
+
+    .modal,
     .modal .block-title {
         @include color( $color__text );
     }
@@ -323,7 +334,7 @@
 
             &.iframe-block {
                 float: right;
-                padding: 0;                
+                padding: 0;
             }
         }
     }
