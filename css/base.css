@@ -3146,9 +3146,10 @@ embed {
     height: 0.2rem;
     width: 100%; }
   .charitable-form-fields .charitable-fieldset .charitable-form-header {
+    content: "";
+    display: table;
     position: relative;
-    float: none;
-    display: inline;
+    float: left;
     clear: both;
     left: 24px;
     left: 2.4rem;
