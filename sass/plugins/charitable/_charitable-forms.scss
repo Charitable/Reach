@@ -67,7 +67,8 @@
 
         .charitable-form-header {
             position: relative;
-            float: left;
+            float: none;
+            display: inline;
             clear: both;
             @include left( 24 );
             margin: 0;
