@@ -82,14 +82,14 @@ if ( ! class_exists( 'Reach_Customizer_Styles' ) ) :
 
 				?>
 <style id="customizer-styles" media="all" type="text/css">
-	<?php echo $this->get_accent_colour_css() ?>
-	<?php echo $this->get_background_colour_css() ?>
-	<?php echo $this->get_text_colour_css() ?>
-	<?php echo $this->get_header_text_colour_css() ?>
-	<?php echo $this->get_footer_text_colour_css() ?>
-	<?php echo $this->get_background_image_css( 'body_background', 'body', 'repeat' ) ?>
-	<?php echo $this->get_background_image_css( 'blog_banner_background', '.banner', 'repeat' ) ?>
-	<?php echo $this->get_background_image_css( 'campaign_feature_background', '.feature-block', 'repeat' ) ?>
+	<?php echo $this->get_accent_colour_css(); ?>
+	<?php echo $this->get_background_colour_css(); ?>
+	<?php echo $this->get_text_colour_css(); ?>
+	<?php echo $this->get_header_text_colour_css(); ?>
+	<?php echo $this->get_footer_text_colour_css(); ?>
+	<?php echo $this->get_background_image_css( 'body_background', 'body', 'repeat' ); ?>
+	<?php echo $this->get_background_image_css( 'blog_banner_background', '.banner', 'repeat' ); ?>
+	<?php echo $this->get_background_image_css( 'campaign_feature_background', '.feature-block', 'repeat' ); ?>
 </style>
 				<?php
 				$styles = ob_get_clean();

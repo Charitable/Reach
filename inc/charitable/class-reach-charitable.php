@@ -8,7 +8,8 @@
  * @copyright   Copyright (c) 2019, Studio 164a
  * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
-if ( ! defined( 'ABSPATH' ) ) { exit; // Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
 }
 if ( ! class_exists( 'Reach_Charitable' ) ) :
 
@@ -74,6 +75,7 @@ if ( ! class_exists( 'Reach_Charitable' ) ) :
 			add_filter( 'charitable_campaign_video_embed_args', array( $this, 'video_embed_args' ), 5 );
 			add_filter( 'charitable_add_custom_styles', '__return_false' );
 			add_filter( 'charitable_campaign_widget_thumbnail_size', array( $this, 'set_campaign_widget_thumbnail_size' ) );
+			add_filter( 'charitable_button_class', array( $this, 'add_button_classes' ), 10, 2 );
 		}
 
 		/**
@@ -97,23 +99,27 @@ if ( ! class_exists( 'Reach_Charitable' ) ) :
 		 * @since   1.0.0
 		 */
 		public function setup_localized_scripts() {
-			wp_localize_script('reach', 'REACH_CROWDFUNDING', array(
-				'need_minimum_pledge'   => __( 'Your pledge must be at least the minimum pledge amount.', 'reach' ),
-				'years'                 => __( 'Years', 'reach' ),
-				'months'                => __( 'Months', 'reach' ),
-				'weeks'                 => __( 'Weeks', 'reach' ),
-				'days'                  => __( 'Days', 'reach' ),
-				'hours'                 => __( 'Hours', 'reach' ),
-				'minutes'               => __( 'Minutes', 'reach' ),
-				'seconds'               => __( 'Seconds', 'reach' ),
-				'year'                  => __( 'Year', 'reach' ),
-				'month'                 => __( 'Month', 'reach' ),
-				'day'                   => __( 'Day', 'reach' ),
-				'hour'                  => __( 'Hour', 'reach' ),
-				'minute'                => __( 'Minute', 'reach' ),
-				'second'                => __( 'Second', 'reach' ),
-				'timezone_offset'       => reach_get_timezone_offset(),
-			) );
+			wp_localize_script(
+				'reach',
+				'REACH_CROWDFUNDING',
+				array(
+					'need_minimum_pledge' => __( 'Your pledge must be at least the minimum pledge amount.', 'reach' ),
+					'years'               => __( 'Years', 'reach' ),
+					'months'              => __( 'Months', 'reach' ),
+					'weeks'               => __( 'Weeks', 'reach' ),
+					'days'                => __( 'Days', 'reach' ),
+					'hours'               => __( 'Hours', 'reach' ),
+					'minutes'             => __( 'Minutes', 'reach' ),
+					'seconds'             => __( 'Seconds', 'reach' ),
+					'year'                => __( 'Year', 'reach' ),
+					'month'               => __( 'Month', 'reach' ),
+					'day'                 => __( 'Day', 'reach' ),
+					'hour'                => __( 'Hour', 'reach' ),
+					'minute'              => __( 'Minute', 'reach' ),
+					'second'              => __( 'Second', 'reach' ),
+					'timezone_offset'     => reach_get_timezone_offset(),
+				)
+			);
 		}
 
 		/**
@@ -125,7 +131,6 @@ if ( ! class_exists( 'Reach_Charitable' ) ) :
 		 */
 		public function dequeue_styles() {
 			wp_deregister_style( 'charitable-ambassadors-my-campaigns-css' );
-			wp_deregister_style( 'charitable-ambassadors-styles' );
 		}
 
 		/**
@@ -324,6 +329,27 @@ if ( ! class_exists( 'Reach_Charitable' ) ) :
 		 */
 		public function set_campaign_widget_thumbnail_size() {
 			return 'reach-post-thumbnail-medium';
+		}
+
+		/**
+		 * Add button classes for some buttons.
+		 *
+		 * @since  1.2.0
+		 *
+		 * @param  array  $classes The button classes.
+		 * @param  string $button  The specific button we're showing.
+		 * @return array
+		 */
+		public function add_button_classes( $classes, $button ) {
+			switch ( $button ) {
+				case 'quick-submit-campaign':
+				case 'fundraise':
+				case 'join-team':
+					$classes[] = 'button-alt';
+					break;
+			}
+
+			return $classes;
 		}
 	}
 

@@ -4,16 +4,16 @@
 	@include border-color( $color__background-button );
 	&:hover {
 		text-decoration: none;
-	}	
+	}
 }
 
-.button-alt, 
-.button-secondary, 
-.button.button-alt, 
+.button-alt,
+.button-secondary,
+.button.button-alt,
 .button.button-secondary {
 	@include button-inverted();
 	@include color( $color__background-button );
-	@include border-color( $color__background-button );	
+	@include border-color( $color__background-button );
 
 	&:hover {
 		@include background-color( $color__background-button );
@@ -29,10 +29,14 @@
 			@include color( $color__text-overlay );
 		}
 	}
+
+	&:after {
+		display: none;
+	}
 }
 
 .button-small,
-.button.button-small, 
+.button.button-small,
 .button-alt.button-small {
 	@include max-width( 120 );
 	@include padding-left( 10 );
@@ -40,7 +44,7 @@
 	@include font-size( 12 );
 }
 
-.button-large, 
+.button-large,
 .button.button-large {
 	@include font-size( 25 );
 	@include height( 50 );

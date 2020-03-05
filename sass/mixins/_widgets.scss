@@ -2,7 +2,7 @@
     background: transparent;
     border: none;
     padding: 0;
-    
+
     .widget-title {
         margin-top: 0;
     }
@@ -46,7 +46,7 @@
             li {
                 width: 100%;
                 @include padding-bottom( $size__margin-half );
-                @include border-bottom( 1 );                
+                @include border-bottom( 1 );
             }
 
             .edd_price_option_sep {
@@ -76,15 +76,15 @@
         .edd-item-quantity {
             @include width( 65 );
             @include padding-left( $size__margin-half );
-            @include padding-right( $size__margin-half );   
+            @include padding-right( $size__margin-half );
         }
-        
+
         .edd-add-to-cart.button {
             float: right;
             @include font-size();
             @include padding-left( $size__margin-half );
             @include padding-right( $size__margin-half );
-        }   
+        }
 
         .edd_go_to_checkout.button {
             float: left;

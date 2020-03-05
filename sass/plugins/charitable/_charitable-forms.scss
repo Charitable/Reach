@@ -39,7 +39,14 @@
                 padding: 0;
             }
         }
+
+        &.charitable-form-field-checkbox {
+            float: none;
+            clear: both;
+            width: 100%;
+        }
     }
+
 
     .charitable-fieldset {
         position: relative;
@@ -68,7 +75,11 @@
             @include font-size( 18 );
             font-weight: normal;
             @include color( $color__accent );
-            background-color: transparent;
+            background-color: #fff;
+
+            + * {
+                clear: both;
+            }
         }
 
         .charitable-fieldset {
@@ -85,6 +96,36 @@
                 left: 0;
                 @include padding( $size__margin, 0 );
                 @include font-size();
+            }
+        }
+    }
+
+    .charitable-fundraiser-type-field,
+    .fundraiser-type-selection-step {
+        padding-right: 0;
+        float: none;
+        width: 100%;
+        &.odd {
+            padding-right: 0;
+        }
+
+
+        .charitable-radio-list {
+            @include border;
+            border-bottom-width: 0;
+            border-radius: 0.4rem;
+            li {
+                @include border-bottom-width( $size__border );
+            }
+            li.selected {
+                @include background-color( $color__background-content-pop );
+            }
+            &.selected-team-member {
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+                li.selected {
+                    border-bottom: 0;
+                }
             }
         }
     }
@@ -210,6 +251,29 @@
     }
 }
 
+#charitable-campaign-team-members {
+    @include border-width( $size__border );
+
+    .team-member {
+        td {
+            @include padding();
+            @include border-width( 0, 0, 1, 0 );
+        }
+        label {
+            padding: 0;
+        }
+        .remove {
+            position: relative;
+            background: none;
+            color: transparent;
+        }
+    }
+
+    tfoot td {
+        border: none;
+    }
+}
+
 @include bp( 600 ) {
     #charitable-campaign-suggested-donations {
         .charitable-form-field.odd {
@@ -313,54 +377,44 @@
 }
 
 /* Recipient selection */
-
 #charitable_field_recipient {
-    float: left;
+    clear: left;
     width: 100%;
-    @include padding( 24 );
-    @include border( 1 );
-    border-radius: 0.4rem;
+    padding: 0;
+    border: none;
     @include background-color( $color__background-meta );
 }
 
-.charitable-recipient-type-options {
+ul.charitable-recipient-type-options {
     list-style: none;
     padding: 0;
+    border: none;
     @include margin-bottom( 12 );
-    float: left;
     width: 100%;
 
     .charitable-recipient-type {
-        float: left;
-        @include padding( 12 );
+        @include padding( 24 );
         @include border;
-        border-radius: 0.4rem;
+        border-bottom-width: 0;
         @include background-color( $color__background-content );
-    }
+        overflow: auto;
 
-    .charitable-recipient-type.selected {
-        @include border-color( $color__accent );
+        &:last-child {
+            @include border-bottom();
+        }
+
+        &.selected {
+            @include background-color( $color__background-content-pop );
+        }
     }
 
     h4 {
         margin-top: 0;
     }
-}
 
-.charitable-recipient-type-options-2 .charitable-recipient-type {
-    width: 49%;
-
-    &:nth-child(2n+2) {
-        margin-left: 2%;
-    }
-}
-
-.charitable-recipient-type-options-3 .charitable-recipient-type {
-    width: 32%;
-    margin-left: 2%;
-
-    &:nth-child(3n+1) {
-        margin-left: 0;
+    .charitable-form-field {
+        float: none;
+        width: 100%;
     }
 }
 
@@ -409,19 +463,11 @@
     }
 }
 
-.charitable-recipient-type-fields {
-    > div {
-        @extend .cf;
-        clear: both;
-        width: 100%;
-        @include max-width( 600 );
-        margin: 0 auto;
-        @include padding( 24 );
-        @include border();
-        background-color: #fff;
-        // border: 1px solid #e2dedb;
-        border-radius: 0.4rem;
-    }
+div#charitable_field_team_id.fundraiser-type-selection-step {
+    @include background-color( $color__background-content-pop );
+    @include border-left-width( $size__border );
+    @include border-right-width( $size__border );
+    @include border-bottom-width( $size__border );
 }
 
 body > .select2-container--open {

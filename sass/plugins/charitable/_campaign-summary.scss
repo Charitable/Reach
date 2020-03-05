@@ -52,24 +52,33 @@
     }
 
     .campaign-action-buttons {
-      display: flex;
-      margin: 0.3rem auto 4.2rem auto;
-      width: 40rem;
+        display: flex;
+        margin: 0.3rem auto 4.2rem auto;
+        width: 40rem;
 
-      > * {
-        flex: auto;
-        display: inline-block;
-        padding: 0;
-        text-align: center;
-      }
-
-      .charitable-button {
-        @include font-size( 25 );
-        @include padding( $size__margin, 20 );
-        &:hover {
-            @include color( $color__text-overlay );
+        > * {
+            flex: auto;
+            display: inline-block;
+            padding: 0;
+            text-align: center;
         }
-      }
+
+        .charitable-button {
+            @include font-size( 25 );
+            @include padding( $size__margin, 20 );
+            &:hover {
+                @include color( $color__text-overlay );
+            }
+
+            &.fundraise-button {
+                @include padding( $size__margin + 1, 20 );
+                border-color: $color__text-overlay;
+                color: $color__text-overlay;
+                &:hover {
+                    border-color: $color__text;
+                }
+            }
+        }
     }
 
     .campaign-finished {
@@ -340,11 +349,14 @@
     }
 }
 
-.charitable-ambassadors-campaign-creator-toolbar {
+div.charitable-ambassadors-campaign-creator-toolbar {
     @include fullwidth-wrapper-padded();
     @include padding( $size__margin, $size__margin-double );
     @include background-color( $color__accent-hover );
     @include color( $color__text-overlay );
+    font-size: 1em;
+    margin: 0;
+    border: none;
 
     @include bp( 800 ) {
         @include padding-left( $size__margin-triple + 9 );
@@ -352,7 +364,6 @@
     }
 
     a {
-        float: right;
         @include color( $color__background-content );
         font-weight: 100;
 
@@ -364,9 +375,5 @@
     .edit-link::before {
         @include icon();
         content: "\f040";
-    }
-
-    .campaign-status {
-        color: rgba(255, 255, 255, 0.5);
     }
 }

@@ -3,7 +3,7 @@
         @extend .post-title;
         margin-top: 0;
         @include color( $color__accent );
-    }    
+    }
 }
 
 .charitable-user-posts {
@@ -17,23 +17,25 @@
     @include margin-bottom;
     @include border( 1 );
     border-radius: 0.4rem;
-    &::after {     
-        position: absolute;
-        top: 0;
-        right: 0;
-        @include width( 150 );
-        height: 100%;           
-        @include border-left( 1 );
-        border-radius: 0 0.4rem 0.4rem 0;
-        @include background-color( $color__background-blockquote );
-    }
+
     /* Float image and campaign summary side by side, with actions below. */
-    @include bp( 768 ) {
+    @include bp( 900 ) {
         @include clearfix;
         .wp-post-image {
             float: left;
             @include max-width( 320 );
             width: 50%;
+        }
+
+        &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            @include width( 150 );
+            height: 100%;
+            @include border-left( 1 );
+            border-radius: 0 0.4rem 0.4rem 0;
+            @include background-color( $color__background-blockquote );
         }
     }
     /* Float actions to the right. */
@@ -50,125 +52,166 @@
     }
 }
 
+.charitable-user-posts.charitable-user-campaigns {
+    .charitable-campaign {
+        display: block;
+        float: left;
+
+        .campaign-status {
+            @include padding;
+            text-align: left;
+            @include bp( 900 ) {
+                float: left;
+                min-width: 0;
+                width: calc( 65% - 150px ); // This is the width used when the image is displayed at less than 320px
+            }
+            @include bp( 1138 ) {
+                width: calc( 100% - 470px ); // This is the width used when the image has maxed out at 320px
+            }
+        }
+
+        .charitable-campaign-thumbnail {
+            padding: 0;
+        }
+
+        .campaign-summary {
+            padding: 0;
+
+            .user-post-title {
+                @include margin-top;
+            }
+
+            .user-post-stats.campaign-stats {
+                width: auto;
+                max-width: 100%;
+                float: none;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+
+                .summary-item {
+                    float: none;
+                    width: 100%;
+                    clear: none;
+                    @include padding( $size__margin );
+                    margin: 0;
+                    @include border-bottom( 1 );
+                    @include font-size();
+                    @include line-height( 18 );
+                    text-align: left;
+
+                    span,
+                    span.amount {
+                        display: block;
+                        @include font-size( $font__font-size-big );
+                        @include line-height( $font__line-height-big );
+                        @include color( $color__accent );
+                    }
+
+                    .goal-amount {
+                        display: inline;
+                        font-size: 1em;
+                        line-height: 1em;
+                        font-weight: bolder;
+                    }
+
+                    &:first-child {
+                        padding-top: 0;
+                        border-top: 0;
+                    }
+
+                    &:last-child {
+                        @include padding-bottom;
+                        @include border-bottom( 1 );
+                    }
+
+                    @include bp( 600 ) {
+                        float: left;
+                        width: 50%;
+
+                        &:nth-child(2) {
+                            padding-top: 0;
+                            border-top-width: 0;
+                        }
+
+                        &:nth-child(2n+1) {
+                            clear: left;
+                        }
+
+                        &:nth-child(1n+3) {
+                            border-bottom-width: 0;
+                        }
+                    }
+
+                    @include bp( 900 ) {
+                        width: 100%;
+                        float: none;
+                    }
+                }
+            }
+
+            @include bp( 900 ) {
+                min-width: 0;
+                width: calc( 65% - 150px ); // This is the width used when the image is displayed at less than 320px
+            }
+            @include bp( 1138 ) {
+                width: calc( 100% - 470px ); // This is the width used when the image has maxed out at 320px
+            }
+        }
+
+        .campaign-actions {
+            ul {
+                padding-left: 0;
+            }
+
+            @include bp( 900 ) {
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 1;
+                @include width( 150 );
+                border-top: 0;
+                background-color: transparent;
+
+                li {
+                    margin: 0;
+                    @include padding( $size__margin, 0 );
+                    @include border-bottom( 1, "" );
+                    &:first-child {
+                        padding-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .user-post-summary {
     padding: 0;
     margin: 0;
     border: none;
-    background-color: transparent;                   
+    background-color: transparent;
 
     .user-post-title {
         @include padding-left( $size__margin-double );
         @include padding-right( $size__margin-double );
     }
 
-    /* Float image and campaign summary side by side, with actions below. */
-    @include bp( 768 ) {
+    /* Float actions to the right. */
+    @include bp( 900 ) {
         float: left;
-        min-width: 50%;
-        width: calc( 100% - 320px );
+        min-width: 0;
+        width: calc( 65% - 150px ); // This is the width used when the image is displayed at less than 320px
         @include padding( 0, $size__margin-double );
-        
         .user-post-title {
             padding-left: 0;
             padding-right: 0;
-            @include margin-top( $size__margin );        
+            @include margin-top( $size__margin );
         }
-    }
-
-    /* Float actions to the right. */
-    @include bp( 900 ) {
-        min-width: 0;
-        width: calc( 65% - 150px ); // This is the width used when the image is displayed at less than 320px            
     }
 
     @include bp( 1138 ) {
         width: calc( 100% - 470px ); // This is the width used when the image has maxed out at 320px
-    }
-}
-
-.user-post-stats.campaign-stats {
-    width: auto;
-    max-width: 100%;
-    float: none;
-    padding: 0;
-    margin: 0;
-    list-style: none;    
-
-    .summary-item {        
-        float: none;
-        width: 100%;
-        clear: none;
-        @include padding( $size__margin );
-        margin: 0;
-        @include border-bottom( 1 );
-        @include font-size();
-        @include line-height( 18 );
-        text-align: left;
-
-        span {
-            @include font-size( $font__font-size-big );
-            @include line-height( $font__line-height-big );
-            @include color( $color__accent );
-        }    
-
-        .goal-amount {
-            display: inline;
-            font-size: 1em;
-            line-height: 1em;
-            font-weight: bolder;
-        }
-
-        &:first-child {
-            padding-top: 0;
-            border-top: 0;
-        }
-
-        &:last-child {
-            @include padding-bottom;
-            @include border-bottom( 1 );
-        }
-
-        @include bp( 600 ) {
-            float: left;
-            width: 50%;            
-            
-            &:nth-child(2) {
-                padding-top: 0;
-                border-top-width: 0;
-            }
-
-            &:nth-child(2n+1) {
-                clear: left;
-            }
-
-            &:nth-child(1n+3) {
-                border-bottom-width: 0;
-            }
-        }
-        
-        @media (min-width: 48em) and (max-width: 68.125em) {
-            float: none;
-            width: 100%;
-            padding-left: 0;
-            padding-right: 0;
-
-            &:nth-child(2) {
-                @include padding-top( $size__margin );
-                @include border-top-width( 1 );
-            }
-
-            &:nth-child(2n+1) {
-                clear: none;
-            }
-
-            &:nth-child(1n+3) {
-                @include border-bottom-width( 1 );
-            }
-
-            &:last-child {
-                border-bottom-width: 0;
-            }
-        }
     }
 }
 
@@ -179,10 +222,10 @@
     @include font-size;
     font-family: $font__secondary;
     @include letter-spacing( 1 );
-    text-transform: uppercase;    
+    text-transform: uppercase;
     @include background-color( $color__background-blockquote );
 
-    .actions {            
+    .actions {
         padding: 0;
         margin: 0;
         list-style-type: none;
@@ -194,7 +237,7 @@
                 margin-bottom: 0;
             }
         }
-    }        
+    }
 
     a {
         @include color( $color__text );
@@ -204,7 +247,7 @@
             @include color( $color__accent );
         }
 
-        &:before {                        
+        &:before {
             position: relative;
             @include top( 1 );
             @include padding-right( 6 );
@@ -215,27 +258,5 @@
 
     .edit-campaign a:before {
         content: "\f040";
-    }
-
-    @include bp( 768 ) {
-        float: left;
-        width: 100%;
-    }
-
-    @include bp( 900 ) { 
-        position: relative;
-        z-index: 1;
-        float: right;           
-        @include width( 150 );
-        border-top: 0;
-        background-color: transparent;      
-
-        li {
-            @include padding( $size__margin, 0 );
-            @include border-bottom( 1, "" );
-            &:first-child {
-                padding-top: 0;
-            }
-        }
     }
 }

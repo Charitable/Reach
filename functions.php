@@ -2,7 +2,7 @@
 /**
  * Core functions and definitions for Reach Theme.
  *
- * @package 	Reach
+ * @package Reach
  */
 
 require_once( 'inc/class-reach-theme.php' );

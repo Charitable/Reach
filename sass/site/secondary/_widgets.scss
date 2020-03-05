@@ -5,7 +5,7 @@
 .widget {
 	@include margin-bottom( $size__margin-triple );
 	@include padding( $size__margin-double );
-	@include border( 1 );	
+	@include border( 1 );
 	border-radius: 0.4rem;
 	@include background-color( $color__background-widget );
 	@include hidden-overflow();
@@ -29,21 +29,28 @@
 
 	tfoot td,
 	th,
-	input[type=text]:focus, 	
-	input[type=password]:focus, 	
-	input[type=email]:focus, 	
-	input[type=number]:focus, 	
-	textarea:focus, 	
-	input[type=text]:active, 	
-	input[type=password]:active, 	
-	input[type=email]:active, 	
-	input[type=number]:active, 	
+	input[type=text]:focus,
+	input[type=password]:focus,
+	input[type=email]:focus,
+	input[type=number]:focus,
+	textarea:focus,
+	input[type=text]:active,
+	input[type=password]:active,
+	input[type=email]:active,
+	input[type=number]:active,
 	textarea:active {
 		@include background-color( $color__background-content );
 	}
 
 	&.content-block {
 		@include background-color( $color__background-content );
+	}
+
+	.charitable-form-fields {
+		.charitable-form-field {
+			float: none;
+			width: 100%;
+		}
 	}
 }
 
@@ -81,7 +88,7 @@
 		white-space: nowrap;
 	}
 
-	tr td:last-child, 
+	tr td:last-child,
 	tr th:last-child {
 		border-right: 0;
 	}
@@ -107,8 +114,8 @@
 
 	.search-field {
 		max-width: 100%;
-		margin: 0;	
-		@include padding( $size__margin, 40, $size__margin, 10 );				
+		margin: 0;
+		@include padding( $size__margin, 40, $size__margin, 10 );
 		@include border-bottom( 2, $color__border-primary );
 		@include background-color( $color__background-content );
 	}
@@ -121,8 +128,8 @@
 		@include padding( 0, 10 );
 		@include height( 29 );
 		@include font-size( 14 );
-		border: none;	
+		border: none;
 		background-color: transparent;
-		box-shadow: none;	
+		box-shadow: none;
 	}
 }
