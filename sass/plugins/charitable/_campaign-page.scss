@@ -23,6 +23,11 @@
             }
         }
     }
+
+    .charitable-fundraiser-details {
+        font-size: 1em;
+        @include padding;
+    }
 }
 
 .sidebar-campaign.sidebar {
@@ -57,11 +62,6 @@
     .campaign-comments.block,
     .comment-form-block.content-block {
         border-radius: 0 0 0.4rem 0.4rem;
-    }
-
-    .charitable-fundraiser-details {
-        font-size: 1em;
-        @include padding;
     }
 }
 

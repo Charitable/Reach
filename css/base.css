@@ -4355,6 +4355,10 @@ body.campaign-widget {
       border-width: 0px 1px;
       border-width: 0rem 0.1rem;
       border-radius: 0.4rem 0.4rem 0 0; } }
+.single-campaign .charitable-fundraiser-details {
+  font-size: 1em;
+  padding: 14px;
+  padding: 1.4rem; }
 
 .sidebar-campaign.sidebar {
   margin-top: 0; }
@@ -4377,10 +4381,6 @@ body.campaign-widget {
 .donation-form-display-same_page.single-campaign .campaign-comments.block,
 .donation-form-display-same_page.single-campaign .comment-form-block.content-block {
   border-radius: 0 0 0.4rem 0.4rem; }
-.donation-form-display-same_page.single-campaign .charitable-fundraiser-details {
-  font-size: 1em;
-  padding: 14px;
-  padding: 1.4rem; }
 
 ol.charitable-team-members {
   padding-left: 0; }
@@ -4448,12 +4448,12 @@ ol.charitable-team-members {
       font-size: 2.5rem;
       padding: 14px 20px;
       padding: 1.4rem 2rem; }
-      .campaign-summary .campaign-action-buttons .charitable-button.fundraise-button {
+      .campaign-summary .campaign-action-buttons .charitable-button.fundraise-button, .campaign-summary .campaign-action-buttons .charitable-button.join-team-button {
         padding: 15px 20px;
         padding: 1.5rem 2rem;
         border-color: #ffffff;
         color: #ffffff; }
-        .campaign-summary .campaign-action-buttons .charitable-button.fundraise-button:hover {
+        .campaign-summary .campaign-action-buttons .charitable-button.fundraise-button:hover, .campaign-summary .campaign-action-buttons .charitable-button.join-team-button:hover {
           border-color: #70777c; }
   .campaign-summary .campaign-finished {
     margin-bottom: 28px;

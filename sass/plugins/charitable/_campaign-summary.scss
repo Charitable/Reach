@@ -70,7 +70,8 @@
                 @include color( $color__text-overlay );
             }
 
-            &.fundraise-button {
+            &.fundraise-button,
+            &.join-team-button {
                 @include padding( $size__margin + 1, 20 );
                 border-color: $color__text-overlay;
                 color: $color__text-overlay;
