@@ -353,8 +353,8 @@
 div.charitable-ambassadors-campaign-creator-toolbar {
     @include fullwidth-wrapper-padded();
     @include padding( $size__margin, $size__margin-double );
-    @include background-color( $color__accent-hover );
-    @include color( $color__text-overlay );
+    @include background-color( $color__background-content );
+    @include color( $color__text );
     font-size: 1em;
     margin: 0;
     border: none;
@@ -365,11 +365,10 @@ div.charitable-ambassadors-campaign-creator-toolbar {
     }
 
     a {
-        @include color( $color__background-content );
         font-weight: 100;
 
         &:hover {
-            @include color( $color__text-overlay );
+            @include color( $color__text );
         }
     }
 

@@ -25,8 +25,16 @@
     }
 
     .charitable-fundraiser-details {
+        @include padding( $size__margin, $size__margin-double );
         font-size: 1em;
-        @include padding;
+        background-color: #fff;
+        text-align: left;
+        border-radius: 0.4rem 0.4rem 0 0;
+
+        @include bp( 720 ) {
+            @include padding-left( $size__margin-triple );
+            @include padding-right( $size__margin-triple );
+        }
     }
 }
 
@@ -62,6 +70,25 @@
     .campaign-comments.block,
     .comment-form-block.content-block {
         border-radius: 0 0 0.4rem 0.4rem;
+    }
+}
+
+.single-campaign {
+    .content-area {
+        .campaign-type-fundraiser {
+            .entry-block {
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+        }
+    }
+}
+
+.charitable-team-members-wrapper {
+    @include padding( 0, $size__margin );
+    @include bp( 720 ) {
+        @include padding-left( $size__margin-triple );
+        @include padding-right( $size__margin-triple );
     }
 }
 

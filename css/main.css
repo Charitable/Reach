@@ -352,7 +352,8 @@ th,
 .sticky-tag,
 .campaign-title,
 .author .author-facts h2,
-.author .author-bio h3 {
+.author .author-bio h3,
+.charitable-fundraiser-details {
   font-family: Oswald, "Helvetica Neue", Helvetica, sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -4694,9 +4695,18 @@ body.campaign-widget {
       border-width: 0rem 0.1rem;
       border-radius: 0.4rem 0.4rem 0 0; } }
 .single-campaign .charitable-fundraiser-details {
+  padding: 14px 28px;
+  padding: 1.4rem 2.8rem;
   font-size: 1em;
-  padding: 14px;
-  padding: 1.4rem; }
+  background-color: #fff;
+  text-align: left;
+  border-radius: 0.4rem 0.4rem 0 0; }
+  @media (min-width: 45em) {
+    .single-campaign .charitable-fundraiser-details {
+      padding-left: 42px;
+      padding-left: 4.2rem;
+      padding-right: 42px;
+      padding-right: 4.2rem; } }
 
 .sidebar-campaign.sidebar {
   margin-top: 0; }
@@ -4720,6 +4730,20 @@ body.campaign-widget {
 .donation-form-display-same_page.single-campaign .campaign-comments.block,
 .donation-form-display-same_page.single-campaign .comment-form-block.content-block {
   border-radius: 0 0 0.4rem 0.4rem; }
+
+.single-campaign .content-area .campaign-type-fundraiser .entry-block {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+.charitable-team-members-wrapper {
+  padding: 0px 14px;
+  padding: 0rem 1.4rem; }
+  @media (min-width: 45em) {
+    .charitable-team-members-wrapper {
+      padding-left: 42px;
+      padding-left: 4.2rem;
+      padding-right: 42px;
+      padding-right: 4.2rem; } }
 
 ol.charitable-team-members {
   padding-left: 0; }
@@ -5087,8 +5111,8 @@ div.charitable-ambassadors-campaign-creator-toolbar {
   position: relative;
   padding: 14px 28px;
   padding: 1.4rem 2.8rem;
-  background-color: #97c4e6;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #70777c;
   font-size: 1em;
   margin: 0;
   border: none; }
@@ -5105,10 +5129,9 @@ div.charitable-ambassadors-campaign-creator-toolbar {
       padding-right: 51px;
       padding-right: 5.1rem; } }
   div.charitable-ambassadors-campaign-creator-toolbar a {
-    color: #ffffff;
     font-weight: 100; }
     div.charitable-ambassadors-campaign-creator-toolbar a:hover {
-      color: #ffffff; }
+      color: #70777c; }
   div.charitable-ambassadors-campaign-creator-toolbar .edit-link::before {
     font-family: "Reach-Icons";
     speak: none;
