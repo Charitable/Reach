@@ -3,8 +3,8 @@ Contributors: WPCharitable, Studio164a
 Donate link: https://www.wpcharitable.com
 Tags: blue, light, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-colors, custom-menu, featured-images, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
 Requires at least: 4.2
-Tested up to: 5.2.2
-Stable tag: 1.1.3
+Tested up to: 5.3.2
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
