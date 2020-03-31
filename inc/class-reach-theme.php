@@ -28,7 +28,7 @@ if ( ! class_exists( 'Reach_Theme' ) ) :
 		/**
 		 * The theme version.
 		 */
-		const VERSION = '1.1.0';
+		const VERSION = '1.2.1';
 
 		/**
 		 * Database version number.
