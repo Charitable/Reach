@@ -270,7 +270,8 @@
     @include margin-bottom( $size__margin );
 
     select,
-    input {
+    input,
+    #charitable_stripe_card_field {
         @include background-color( $color__background-content );
         @include border;
     }
@@ -314,6 +315,12 @@
     @include width( 200 );
     margin-left: 0;
 }
+
+#charitable_stripe_card_field {
+    float: left;
+    width: 50%;
+    margin-top: 4px;
+  }
 
 #custom-donation-amount-field.charitable-custom-donation-field-alone {
     @include padding( 2 );

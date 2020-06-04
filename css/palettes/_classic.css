@@ -3775,8 +3775,10 @@ body > .select2-container--open .select2-dropdown--above {
   margin-bottom: 1.4rem; }
   #charitable-user-fields select,
   #charitable-user-fields input,
+  #charitable-user-fields #charitable_stripe_card_field,
   #charitable-gateway-fields .charitable-gateway-fields select,
-  #charitable-gateway-fields .charitable-gateway-fields input {
+  #charitable-gateway-fields .charitable-gateway-fields input,
+  #charitable-gateway-fields .charitable-gateway-fields #charitable_stripe_card_field {
     border-width: 2px;
     border-width: 0.2rem;
     border-style: solid; }
@@ -3812,6 +3814,11 @@ body > .select2-container--open .select2-dropdown--above {
   width: 200px;
   width: 20rem;
   margin-left: 0; }
+
+#charitable_stripe_card_field {
+  float: left;
+  width: 50%;
+  margin-top: 4px; }
 
 #custom-donation-amount-field.charitable-custom-donation-field-alone {
   padding: 2px;
