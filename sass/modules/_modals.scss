@@ -50,7 +50,11 @@
 			@include padding-left( 24 );
 			@include padding-right( 24 );
 		}
-	}
+    }
+
+    #charitable-donation-form {
+        padding: 0;
+    }
 }
 
 .modal-close {
@@ -60,7 +64,7 @@
 	@include right( 6 );
 	@include font-size( 20 );
 	line-height: 1;
-	cursor: pointer;    
+	cursor: pointer;
     @include icon();
 
     &:before {

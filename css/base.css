@@ -1509,6 +1509,8 @@ a {
       padding-left: 2.4rem;
       padding-right: 24px;
       padding-right: 2.4rem; } }
+  .modal #charitable-donation-form {
+    padding: 0; }
 
 .modal-close {
   position: absolute;
