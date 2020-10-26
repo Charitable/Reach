@@ -1537,6 +1537,8 @@ a {
       padding-left: 2.4rem;
       padding-right: 24px;
       padding-right: 2.4rem; } }
+  .modal #charitable-donation-form {
+    padding: 0; }
 
 .modal-close {
   position: absolute;
@@ -3753,6 +3755,10 @@ body > .select2-container--open .select2-dropdown--above {
   #charitable-donation-amount-form .charitable-form-field input[type="checkbox"] {
     position: relative;
     z-index: 1; }
+  #charitable-donation-form .charitable-form-field.recurring-donation-period,
+  #charitable-donation-amount-form .charitable-form-field.recurring-donation-period {
+    float: none;
+    width: 100%; }
 
 #charitable-user-fields,
 #charitable-meta-fields {
@@ -4380,6 +4386,7 @@ body.campaign-widget {
   margin-bottom: 0; }
 .single-campaign .content-area .campaign-image,
 .single-campaign .content-area .campaign-video {
+  width: 100%;
   padding: 28px 28px 0px;
   padding: 2.8rem 2.8rem 0rem;
   text-align: center;

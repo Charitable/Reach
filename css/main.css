@@ -1277,7 +1277,7 @@ a {
 #charitable-donation-amount-form .donation-amounts:after, .widget.widget_charitable_edd_campaign_downloads .edd_download_purchase_form:after, #secondary .widget.widget_charitable_donation_stats_widget .donation-stats:after, #edd_checkout_wrap #edd_checkout_form_wrap:after, .widget.widget_pp_campaign_events .edd_download_purchase_form:after, .event-tickets li:after {
   clear: both; }
 
-/*--------------------------------------------------------------
+/*-------------------------------------------------------------- 
 9.0 Invisibility
 --------------------------------------------------------------*/
 .hidden {
@@ -1297,8 +1297,8 @@ a {
 .lt-ie9 .if-tiny-hide {
   display: none !important; }
 
-/*--------------------------------------------------------------
-10.0 Fancy Select Inputs
+/*-------------------------------------------------------------- 
+10.0 Fancy Select Inputs 
 --------------------------------------------------------------*/
 .select-wrapper {
   position: relative;
@@ -1320,7 +1320,7 @@ a {
   font-size: 16px;
   font-size: 1.6rem; }
 
-/*--------------------------------------------------------------
+/*-------------------------------------------------------------- 
 11.0 Button Links
 --------------------------------------------------------------*/
 .button {
@@ -1472,7 +1472,7 @@ a {
   line-height: 50px;
   line-height: 5rem; }
 
-/*--------------------------------------------------------------
+/*-------------------------------------------------------------- 
 12.0 Blocks
 --------------------------------------------------------------*/
 /* Various re-usable styled blocks */
@@ -1582,7 +1582,7 @@ a {
   padding-left: 32px;
   padding-left: 3.2rem; }
 
-/*--------------------------------------------------------------
+/*-------------------------------------------------------------- 
 13.0 Modals
 --------------------------------------------------------------*/
 #lean_overlay {
@@ -1662,7 +1662,7 @@ a {
     .modal-close:hover:before {
       color: #574c45; }
 
-/*--------------------------------------------------------------
+/*-------------------------------------------------------------- 
 14.0 Accordions
 --------------------------------------------------------------*/
 .accordion h3 {
@@ -1682,7 +1682,7 @@ a {
   .accordion h3:active {
     outline: 0; }
 
-/*--------------------------------------------------------------
+/*-------------------------------------------------------------- 
 13.0 Masthead
 --------------------------------------------------------------*/
 #page > .layout-wrapper,
@@ -3313,7 +3313,7 @@ embed {
       background-color: #cc181e;
       color: #ffffff; }
 
-/*--------------------------------------------------------------
+/*-------------------------------------------------------------- 
 18.1.2 Forms
 --------------------------------------------------------------*/
 .charitable-form {
@@ -4028,7 +4028,8 @@ body > .select2-container--open .select2-dropdown--above {
   #charitable-donation-amount-form .charitable-form-field input[type="checkbox"] {
     position: relative;
     z-index: 1; }
-  #charitable-donation-form .charitable-form-field.recurring-donation-period {
+  #charitable-donation-form .charitable-form-field.recurring-donation-period,
+  #charitable-donation-amount-form .charitable-form-field.recurring-donation-period {
     float: none;
     width: 100%; }
 
@@ -5204,7 +5205,7 @@ div.charitable-ambassadors-campaign-creator-toolbar {
       padding-right: 42px;
       padding-right: 4.2rem; } }
 
-/*--------------------------------------------------------------
+/*-------------------------------------------------------------- 
 18.1.8 User Dashboard
 --------------------------------------------------------------*/
 body.user-dashboard .content-area {
@@ -5338,7 +5339,7 @@ body.user-dashboard .charitable-submit-field {
       .user-dashboard-menu .menu {
         padding-left: 0; } }
 
-/*--------------------------------------------------------------
+/*--------------------------------------------------------------  
 18.1.9 User Campaigns
 --------------------------------------------------------------*/
 .entry-header .entry-title {
@@ -5584,7 +5585,7 @@ body.user-dashboard .charitable-submit-field {
   .user-post-actions .edit-campaign a:before {
     content: "\f040"; }
 
-/*--------------------------------------------------------------
+/*--------------------------------------------------------------  
 18.1.10 Geolocation
 --------------------------------------------------------------*/
 .campaign-location {
@@ -5602,7 +5603,7 @@ body.user-dashboard .charitable-submit-field {
   font-weight: normal;
   color: #70777c; }
 
-/*--------------------------------------------------------------
+/*-------------------------------------------------------------- 
 18.2 Easy Digital Downloads
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
