@@ -10,6 +10,7 @@
 
         .campaign-image,
         .campaign-video {
+            width: 100%;
             @include padding( $size__margin-double, $size__margin-double, 0 );
             @include background-color( $color__background-content );
             text-align: center;

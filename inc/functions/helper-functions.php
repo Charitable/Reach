@@ -124,18 +124,14 @@ function reach_get_social_sites() {
  * @since   1.0.0
  */
 function reach_get_current_author() {
-	$author = wp_cache_get( 'current_author', 'reach' );
+	static $author;
 
-	if ( false === $author ) {
-
+	if ( ! isset( $author ) ) {
 		if ( get_query_var( 'author_name' ) ) {
 			$author = get_user_by( 'slug', get_query_var( 'author_name' ) );
 		} else {
 			$author = get_userdata( get_query_var( 'author' ) );
 		}
-
-		wp_cache_set( 'current_author', $author, 'reach' );
-
 	}
 
 	return $author;
