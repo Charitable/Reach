@@ -4028,6 +4028,9 @@ body > .select2-container--open .select2-dropdown--above {
   #charitable-donation-amount-form .charitable-form-field input[type="checkbox"] {
     position: relative;
     z-index: 1; }
+  #charitable-donation-form .charitable-form-field.recurring-donation-period {
+    float: none;
+    width: 100%; }
 
 #charitable-user-fields,
 #charitable-meta-fields {

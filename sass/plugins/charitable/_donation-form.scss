@@ -250,6 +250,11 @@
             position: relative;
             z-index: 1;
         }
+
+        &.recurring-donation-period {
+            float: none;
+            width: 100%;
+        }
     }
 }
 
