@@ -19,6 +19,7 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+	<?php wp_body_open(); ?>
 	<div id="page" class="hfeed site-container">
 		<div class="layout-wrapper">
 			<a class="skip-link screen-reader-text" href="#main"><?php _e( 'Skip to content', 'reach' ); ?></a>
