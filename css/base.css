@@ -3793,11 +3793,11 @@ body > .select2-container--open .select2-dropdown--above {
   width: 20rem;
   margin-left: 0; }
 
-#charitable_stripe_card_field {
-  float: left;
-  width: 50%;
-  margin-top: 4px; }
-
+@media (min-width: 37.5em) {
+  #charitable_stripe_card_field {
+    float: left;
+    width: 50%;
+    margin-top: 4px; } }
 #custom-donation-amount-field.charitable-custom-donation-field-alone {
   padding: 2px;
   padding: 0.2rem;
@@ -4202,30 +4202,30 @@ body.campaign-widget {
     border: none;
     overflow: hidden; }
   @media (min-width: 37.5em) {
-    .campaigns-grid-wrapper .campaign-loop.campaign-grid {
+    .campaigns-grid-wrapper .campaign-loop.campaign-grid:not(.campaign-grid-3, .campaign-grid-2) {
       width: 102%; }
-      .campaigns-grid-wrapper .campaign-loop.campaign-grid .campaign.hentry {
+      .campaigns-grid-wrapper .campaign-loop.campaign-grid:not(.campaign-grid-3, .campaign-grid-2) .campaign.hentry {
         width: 48%;
         margin-right: 1.9%;
         margin-bottom: 28px;
         margin-bottom: 2.8rem; }
-        .campaigns-grid-wrapper .campaign-loop.campaign-grid .campaign.hentry:nth-child(2n+2) {
+        .campaigns-grid-wrapper .campaign-loop.campaign-grid:not(.campaign-grid-3, .campaign-grid-2) .campaign.hentry:nth-child(2n+2) {
           margin-right: 0; } }
   @media (min-width: 57.5em) {
-    .campaigns-grid-wrapper .campaign-loop.campaign-grid {
+    .campaigns-grid-wrapper .campaign-loop.campaign-grid:not(.campaign-grid-3, .campaign-grid-2) {
       width: 104%; }
-      .campaigns-grid-wrapper .campaign-loop.campaign-grid .campaign.hentry {
+      .campaigns-grid-wrapper .campaign-loop.campaign-grid:not(.campaign-grid-3, .campaign-grid-2) .campaign.hentry {
         width: 31.33%; }
-        .campaigns-grid-wrapper .campaign-loop.campaign-grid .campaign.hentry:nth-child(2n+2) {
+        .campaigns-grid-wrapper .campaign-loop.campaign-grid:not(.campaign-grid-3, .campaign-grid-2) .campaign.hentry:nth-child(2n+2) {
           margin-right: 1.9%; }
-        .campaigns-grid-wrapper .campaign-loop.campaign-grid .campaign.hentry:nth-child(3n+3) {
+        .campaigns-grid-wrapper .campaign-loop.campaign-grid:not(.campaign-grid-3, .campaign-grid-2) .campaign.hentry:nth-child(3n+3) {
           margin-right: 0; } }
   @media (min-width: 93.75em) {
-    .campaigns-grid-wrapper .campaign-loop.campaign-grid .campaign.hentry {
+    .campaigns-grid-wrapper .campaign-loop.campaign-grid:not(.campaign-grid-3, .campaign-grid-2) .campaign.hentry {
       width: 23.1%; }
-      .campaigns-grid-wrapper .campaign-loop.campaign-grid .campaign.hentry:nth-child(3n+3) {
+      .campaigns-grid-wrapper .campaign-loop.campaign-grid:not(.campaign-grid-3, .campaign-grid-2) .campaign.hentry:nth-child(3n+3) {
         margin-right: 1.9%; }
-      .campaigns-grid-wrapper .campaign-loop.campaign-grid .campaign.hentry:nth-child(4n+4) {
+      .campaigns-grid-wrapper .campaign-loop.campaign-grid:not(.campaign-grid-3, .campaign-grid-2) .campaign.hentry:nth-child(4n+4) {
         margin-right: 0; } }
 
 .campaign-loop.campaign-grid .campaign.hentry {

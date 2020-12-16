@@ -18,6 +18,10 @@ $campaigns = $view_args['campaigns'];
 $columns   = $view_args['columns'];
 $args      = array();
 
+echo '<pre>';
+var_dump( $columns );
+echo '</pre>';
+
 if ( ! $campaigns->have_posts() ) :
 	return;
 endif;

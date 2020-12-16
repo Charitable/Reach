@@ -60,7 +60,7 @@
 		overflow: hidden;
 	}
 
-	.campaign-loop.campaign-grid {
+	.campaign-loop.campaign-grid:not(.campaign-grid-3,.campaign-grid-2) {
 		@include bp( 600 ) {
 			width: 102%;
 			@include grid-2();

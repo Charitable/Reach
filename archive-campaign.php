@@ -25,7 +25,7 @@ get_header();
 				 *
 				 * @see charitable_template_campaign_loop
 				 */
-				charitable_template_campaign_loop( false );
+				charitable_template_campaign_loop( false, 4 );
 
 				reach_paging_nav( __( 'Older Campaigns', 'reach' ), __( 'Newer Campaigns', 'reach' ) );
 

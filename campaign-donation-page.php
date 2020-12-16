@@ -15,7 +15,7 @@ endif;
 get_header( 'stripped' );
 
 ?>
-<main id="main" class="site-main site-content cf">  
+<main id="main" class="site-main site-content cf">
 	<div class="layout-wrapper">
 		<div id="primary" class="content-area">
 		<?php
@@ -43,7 +43,7 @@ get_header( 'stripped' );
 		<aside id="secondary" class="campaign-benefiting" role="complementary">
 
 			<p class="header"><?php _e( 'Thank you for supporting this campaign', 'reach' ) ?></p>
-			
+
 			<?php
 			if ( $campaign && has_post_thumbnail( $campaign->ID ) ) :
 

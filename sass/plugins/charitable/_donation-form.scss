@@ -321,11 +321,13 @@
     margin-left: 0;
 }
 
-#charitable_stripe_card_field {
-    float: left;
-    width: 50%;
-    margin-top: 4px;
-  }
+@include bp( 600 ) {
+    #charitable_stripe_card_field {
+        float: left;
+        width: 50%;
+        margin-top: 4px;
+    }
+}
 
 #custom-donation-amount-field.charitable-custom-donation-field-alone {
     @include padding( 2 );

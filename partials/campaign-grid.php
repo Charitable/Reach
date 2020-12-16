@@ -18,7 +18,7 @@ endif;
 	<?php
 	$campaigns = Charitable_Campaigns::query();
 
-	charitable_template_campaign_loop( $campaigns );
+	charitable_template_campaign_loop( $campaigns, 4 );
 
 	wp_reset_postdata();
 

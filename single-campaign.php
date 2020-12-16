@@ -36,7 +36,11 @@ if ( have_posts() ) :
 
 		?>
 		<div class="layout-wrapper">
-			<div id="primary" class="content-area <?php if ( ! is_active_sidebar( 'sidebar_campaign' ) ) : ?>no-sidebar<?php endif ?>">
+			<div id="primary" class="content-area 
+			<?php
+			if ( ! is_active_sidebar( 'sidebar_campaign' ) ) :
+				?>
+				no-sidebar<?php endif ?>">
 				<?php
 				/**
 				 * @hook charitable_campaign_content_before
@@ -53,7 +57,7 @@ if ( have_posts() ) :
 				?>
 			</div><!-- #primary -->
 
-			<?php get_sidebar( 'campaign' ) ?>
+			<?php get_sidebar( 'campaign' ); ?>
 
 		</div><!-- .layout-wrapper -->
 		<?php
