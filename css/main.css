@@ -4034,6 +4034,9 @@ body > .select2-container--open .select2-dropdown--above {
     float: none;
     width: 100%; }
 
+@media (max-width: 45em) {
+  .entry-block #charitable-donation-form {
+    padding: 0; } }
 #charitable-user-fields,
 #charitable-meta-fields {
   padding: 14px 0px;
@@ -4147,6 +4150,15 @@ body > .select2-container--open .select2-dropdown--above {
     padding: 0; }
   .stripped.campaign-donation .entry {
     padding: 0; } }
+#charitable-gateway-fields-stripe .charitable-form-field,
+#charitable-gateway-fields-stripe .StripeElement {
+  float: none;
+  width: 100%;
+  padding: 0; }
+#charitable-gateway-fields-stripe .StripeElement {
+  padding: 14px 10px;
+  padding: 1.4rem 1rem; }
+
 /*--------------------------------------------------------------
 18.1.3 Widgets
 --------------------------------------------------------------*/

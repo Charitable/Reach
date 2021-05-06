@@ -258,6 +258,14 @@
     }
 }
 
+@include bp( 720, false ) {
+    .entry-block {
+        #charitable-donation-form {
+            padding: 0;
+        }
+    }
+}
+
 #charitable-user-fields,
 #charitable-meta-fields {
     @include padding( $size__margin, 0 );
@@ -391,5 +399,18 @@
         .entry {
             padding: 0;
         }
+    }
+}
+
+#charitable-gateway-fields-stripe {
+    .charitable-form-field,
+    .StripeElement {
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    .StripeElement {
+        @include padding( $size__margin, 10 );
     }
 }
