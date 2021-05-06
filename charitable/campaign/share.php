@@ -7,7 +7,7 @@
  * @author  Studio 164a
  * @package Reach
  * @since   1.0.0
- * @version 1.0.0
+ * @version 1.2.4
  */
 
 if ( ! defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly
@@ -21,7 +21,7 @@ $widget_url = esc_url( charitable_get_permalink( 'campaign_widget_page' ) );
 <ul class="campaign-sharing share horizontal rrssb-buttons">
 	<li><h6><?php _e( 'Share', 'reach' ) ?></h6></li>
 	<li class="share-twitter">
-		<a href="http://twitter.com/home?status=<?php echo $title ?>%20<?php echo $permalink ?>" class="popup icon" data-icon="&#xf099;"></a>
+		<a href="https://twitter.com/intent/tweet?text=<?php echo $title ?>&amp;url=<?php echo $permalink ?>" class="popup icon" data-icon="&#xf099;"></a>
 	</li>
 	<li class="share-facebook">
 		<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $permalink ?>" class="popup icon" data-icon="&#xf09a;"></a>
@@ -38,9 +38,9 @@ $widget_url = esc_url( charitable_get_permalink( 'campaign_widget_page' ) );
 	<li class="share-widget">
 		<a href="#campaign-widget-<?php the_ID() ?>" class="icon" data-icon="&#xf121;" data-trigger-modal></a>
 		<div id="campaign-widget-<?php the_ID() ?>" class="modal">
-			<a class="modal-close"></a>         
+			<a class="modal-close"></a>
 			<h4 class="block-title"><?php _e( 'Share Campaign', 'reach' ) ?></h4>
-			<div class="block"> 
+			<div class="block">
 				<p><strong><?php _e( 'Embed Code', 'reach' ) ?></strong></p>
 				<pre><?php echo htmlspecialchars( '<iframe src="' . $widget_url . '" width="275" height="468" /></iframe>' ) ?></pre>
 			</div>
@@ -49,5 +49,5 @@ $widget_url = esc_url( charitable_get_permalink( 'campaign_widget_page' ) );
 				<iframe src="<?php echo $widget_url ?>" width="275" height="468" /></iframe>
 			</div>
 		</div>
-	</li>   
+	</li>
 </ul>
