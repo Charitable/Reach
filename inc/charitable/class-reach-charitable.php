@@ -2,11 +2,12 @@
 /**
  * Handles how Charitable features are integrated into the theme.
  *
- * @package     Reach/Classes/Reach_Charitable
- * @version     1.0.0
- * @author      Eric Daams
- * @copyright   Copyright (c) 2019, Studio 164a
- * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License
+ * @package   Reach/Classes/Reach_Charitable
+ * @author    Eric Daams
+ * @copyright Copyright (c) 2021, Studio 164a
+ * @license   http://opensource.org/licenses/gpl-2.0.php GNU Public License
+ * @since     1.0.0
+ * @version   1.2.4
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
@@ -298,13 +299,16 @@ if ( ! class_exists( 'Reach_Charitable' ) ) :
 		/**
 		 * Set the modal window class.
 		 *
-		 * @param   string  $class
 		 * @return  string
 		 * @access  public
 		 * @since   1.0.0
 		 */
-		public function modal_window_class( $class ) {
-			return 'modal';
+		public function modal_window_class() {
+			if ( ! is_admin() || wp_doing_ajax() ) {
+				return 'modal';
+			}
+
+			return 'charitable-modal modal';
 		}
 
 		/**
