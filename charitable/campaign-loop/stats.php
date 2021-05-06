@@ -43,7 +43,7 @@ endif;
 	</li>
 	<li class="campaign-pledged">
 		<span><?php echo charitable_format_money( $campaign->get_donated_amount() ) ?></span>
-		<?php _e( 'Pledged', 'reach' ) ?>               
+		<?php _e( 'Pledged', 'reach' ) ?>
 	</li>
 	<li class="campaign-time-left">
 		<?php echo $campaign->get_time_left() ?>

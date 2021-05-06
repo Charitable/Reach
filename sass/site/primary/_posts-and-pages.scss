@@ -1,5 +1,6 @@
 .single-post .entry-block {
 	padding-top: 0;
+	overflow: hidden;
 }
 
 .post-title {
@@ -15,8 +16,8 @@
 }
 
 .banner {
-	position: relative;	
-	width: 100%;	
+	position: relative;
+	width: 100%;
 	word-wrap: break-word;
 	@include min-height( 100 );
 	@include padding( 35, $size__margin-double );
@@ -35,7 +36,7 @@
 		@include margin-bottom( $size__margin-triple );
 	}
 
-	.content-area .banner { 
+	.content-area .banner {
 		@include left( -$size__margin-triple );
 	}
 }
@@ -46,13 +47,13 @@
 	}
 }
 
-.blog .banner, 
+.blog .banner,
 .archive .banner {
 	@include margin-bottom( $size__margin-triple );
 }
 
 .banner-title {
-	margin: 0;	
+	margin: 0;
 	padding: 0;
 	line-height: 1em;
 	@include letter-spacing( 3 );
@@ -69,29 +70,29 @@
 	display: none;
 }
 
-.sticky {	
+.sticky {
 	.sticky-tag {
 		position: absolute;
-		display: block;        
-        @include padding( $size__margin-half, 0 );      
+		display: block;
+        @include padding( $size__margin-half, 0 );
         @include width( 200 );
-        @include margin( 14, 0, 0, -76 - $size__margin-triple );  
+        @include margin( 14, 0, 0, -76 - $size__margin-triple );
         @include font-size();
         line-height: 1em;
         text-align: center;
-        @include letter-spacing( 1 );        
+        @include letter-spacing( 1 );
         @include background-color( $color__accent );
         @include color( $color__text-overlay );
         -moz-transform: rotate(-45deg);
         -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
-        transform: rotate(-45deg);display: block;			
+        transform: rotate(-45deg);display: block;
 	}
 }
 
 .entry-block {
-	.fit-video, 
+	.fit-video,
 	blockquote {
 		position: relative;
 		@include fullwidth-calc( $size__margin-double );
@@ -102,8 +103,8 @@
 	}
 }
 
-.entry {	
-	@include padding( $size__margin-double, 0 );	
+.entry {
+	@include padding( $size__margin-double, 0 );
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 	@include font-size( $font__font-size-big );
@@ -118,26 +119,26 @@
 		padding-bottom: 0;
 	}
 
-	h1, 
+	h1,
 	h2,
 	h3,
 	h4,
 	h5 {
 		text-transform: none;
 		letter-spacing: 0;
-	}	
+	}
 }
 
-.meta {	
+.meta {
 	@include fullwidth-wrapper();
-	padding: 0;	
+	padding: 0;
 	margin: 0;
 	@include border-top( 1 );
 	border-radius: 0 0 0.4rem 0.4rem;
 	@include font-size( $font__font-size-small );
 	@include line-height( 38 );
 	@include letter-spacing( 1 );
-	font-weight: 300;	
+	font-weight: 300;
 	@include background-color( $color__background-meta );
 	@include color( $color__text-meta );
 
@@ -161,8 +162,8 @@
 		@include color( $color__text );
 	}
 
-	.author, 
-	.comment-count, 
+	.author,
+	.comment-count,
 	.tags {
 		@include margin-left( $size__margin-half );
 		@include padding-left( 10 );
@@ -185,7 +186,7 @@
 
 .archive-title {
 	@include margin( 0, 0, $size__margin-triple );
-	text-align: center;	
+	text-align: center;
 	text-transform: none;
 	letter-spacing: 0;
 }
@@ -199,7 +200,7 @@
 			width: 100%;
 			display: block;
 		}
-	} 
+	}
 }
 
 .lead {

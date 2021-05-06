@@ -2176,7 +2176,8 @@ a {
 11.1 Posts and pages
 --------------------------------------------------------------*/
 .single-post .entry-block {
-  padding-top: 0; }
+  padding-top: 0;
+  overflow: hidden; }
 
 .post-title, .entry-header .entry-title {
   margin-bottom: 14px;
