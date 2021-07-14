@@ -3,7 +3,7 @@
  */
 ( function( $ ) {
 
-    var logo_dimensions = {};    
+    var logo_dimensions = {};
 
 	/**
 	 * Update an image with the given value.
@@ -30,7 +30,7 @@
 			dimensions.width = img.width;
 			dimensions.is_retina = false;
 		}
-		
+
 		return dimensions;
 	};
 
@@ -41,7 +41,7 @@
 		var $logo = $('.site-identity img'),
 			src = wp.customize( 'logo' ).get();
 
-        console.log(src);   
+        console.log(src);
 
 		if ( $logo.length ) {
 			$logo.attr('src', src)
@@ -55,16 +55,16 @@
 	};
 
 	/**
-	 * Update the navigation offset. 
+	 * Update the navigation offset.
 	 */
 	var updateNavigationOffset = function() {
-		var offset_t = $('.site-branding').outerHeight() - 45, 
+		var offset_t = $('.site-branding').outerHeight() - 45,
 			offset_l = $('.site-branding').outerWidth() + 1;
 
 			console.log(offset_l)
 
 		$('.site-navigation').css({
-			marginTop : offset_t, 
+			marginTop : offset_t,
 			maxWidth : 'calc(100% - ' + offset_l + 'px)'
 		});
 
@@ -86,52 +86,52 @@
 	var updateBackgroundColour = function(value) {
 		$("body, #custom-donation-amount-field.charitable-custom-donation-field-alone").css("background-color", value);
         $(".donation-amounts .donation-amount").css("border-color", value);
-	}; 
-	
+	};
+
 	/**
 	 * Update text colour.
-	 */	
+	 */
 	var updateTextColour = function(value) {
 		$("body, button,input[type='button'],input[type='reset'],input[type='submit'], .menu-site a, .button, .button-alt,.button-secondary,.button.button-alt,.button.button-secondary, .modal .block-title, .meta a, #submit, .widget.widget_campaign_creator_widget .creator-profile-link a, .campaigns-grid .campaign-description, .campaigns-grid .campaign-stats, .charitable-donation-form .charitable-form-field .button, .donation-amounts .donation-amount, #custom-donation-amount-field.charitable-custom-donation-field-alone input, body.user-dashboard .charitable-submit-field .button, .charitable-form-field-editor .mce-btn button, .charitable-repeatable-form-field-table .add-row.button, .share-widget .modal,.share-widget .modal .block-title, .user-post-actions a, div.printfriendly a,div.printfriendly a:link, div.printfriendly a:visited, body.events-single .tribe-events-tickets .tickets_price, body.events-single .tribe-events-tickets .tickets_name, #tribe-events .tribe-events-button").css("color", value);
         $("button,input[type='button'],input[type='reset'],input[type='submit'], .button, .button-alt,.button-secondary,.button.button-alt,.button.button-secondary, .sticky .entry .more-link, .sticky .entry .more-link:focus, .sticky .entry .more-link:active, #submit, .widget.widget_campaign_creator_widget .creator-profile-link a, .charitable-donation-form .charitable-form-field .button, .donation-amounts .donation-amount.selected, .donation-amounts .donation-amount, body.user-dashboard .charitable-submit-field .button, #tribe-events .tribe-events-button").css("background-color", value);
-        $("button,input[type='button'],input[type='reset'],input[type='submit'], button,input[type='button'],input[type='reset'],input[type='submit'], .button, .button, .button-alt,.button-secondary,.button.button-alt,.button.button-secondary, .sticky .entry .more-link, .sticky .entry .more-link:focus, .sticky .entry .more-link:active, #submit, .widget.widget_campaign_creator_widget .creator-profile-link a, .widget.widget_campaign_creator_widget .creator-profile-link a, .charitable-donation-form .charitable-form-field .button, .donation-amounts .donation-amount.selected, .donation-amounts .donation-amount, body.user-dashboard .charitable-submit-field .button, .charitable-repeatable-form-field-table .add-row.button, #tribe-events .tribe-events-button").css("border-color", value);        
+        $("button,input[type='button'],input[type='reset'],input[type='submit'], button,input[type='button'],input[type='reset'],input[type='submit'], .button, .button, .button-alt,.button-secondary,.button.button-alt,.button.button-secondary, .sticky .entry .more-link, .sticky .entry .more-link:focus, .sticky .entry .more-link:active, #submit, .widget.widget_campaign_creator_widget .creator-profile-link a, .widget.widget_campaign_creator_widget .creator-profile-link a, .charitable-donation-form .charitable-form-field .button, .donation-amounts .donation-amount.selected, .donation-amounts .donation-amount, body.user-dashboard .charitable-submit-field .button, .charitable-repeatable-form-field-table .add-row.button, #tribe-events .tribe-events-button").css("border-color", value);
 	};
-	
+
 	/**
 	 * Update header text colour.
 	 */
 	var updateHeaderTextColour = function(value) {
 		$(".social a, .account-links a, .account-links .button.button-alt").css("color", value);
 	};
-	
+
 	/**
 	 * Update footer text colour.
 	 */
 	var updateFooterTextColour = function(value) {
 		$("#site-footer, #site-footer a").css("color", value);
 	};
-	
+
 	/**
 	 * Update body background image.
 	 */
 	var updateBodyBackground = function(value) {
 		$('body').css('background-image', 'url(' + value + ')');
-	}; 
-	
+	};
+
 	/**
 	 * Update campaign feature background image.
 	 */
 	var updateCampaignFeatureBackground = function(value) {
 		$('.feature-block').css('background-image', 'url(' + value + ')');
-	}; 
-	
+	};
+
 	/**
 	 * Update banner background image.
 	 */
 	var updateBannerBackground = function(value) {
 		$('.banner').css('background-image', 'url(' + value + ')');
-	}; 
-	
+	};
+
 	/**
 	 * Update social networks.
 	 */
@@ -145,7 +145,7 @@
 		// Update the link
 		else if ($el.length > 0 && value.length > 0) {
 			$el.find('a').attr('href', value);
-		} 
+		}
 		// Remove the link
 		else {
 			$el.remove();
@@ -153,9 +153,9 @@
 	};
 
 	/**************************************
-	 * 
+	 *
 	 * Bind customizer changes to callbacks.
-	 * 
+	 *
 	 **************************************/
 
 	// Update the site title in real time...
@@ -166,7 +166,7 @@
 			updateNavigationOffset();
 		} );
 	} );
-	
+
 	// Update the site description in real time...
 	wp.customize( 'blogdescription', function( value ) {
 		value.bind( function( newval ) {
@@ -178,7 +178,7 @@
 
 	// Update the logo in real time...
 	wp.customize( 'logo', function( value ) {
-		value.bind( function( newval ) {						
+		value.bind( function( newval ) {
 			var $logo = $('.site-identity img');
 
 			// Remove the logo
@@ -194,7 +194,7 @@
 				// Update the offset of the nav
 				updateNavigationOffset();
 			} );
-		} ); 
+		} );
 	} );
 
 	wp.customize( 'logo_is_retina', function( value ) {
@@ -203,8 +203,8 @@
 				if ( false === logo_dimensions.is_retina ) {
 					logo_dimensions.height = logo_dimensions.height / 2;
 					logo_dimensions.width = logo_dimensions.width / 2;
-					logo_dimensions.is_retina = true;	
-				}				
+					logo_dimensions.is_retina = true;
+				}
 			}
 			else {
 				logo_dimensions.height = logo_dimensions.height * 2;
@@ -212,11 +212,11 @@
 				logo_dimensions.is_retina = false;
 			}
 
-			updateLogo();	
+			updateLogo();
 
 			// Update the offset of the nav
 			updateNavigationOffset();
-		} ); 
+		} );
 	} );
 
 	// Hide the site title
@@ -240,10 +240,10 @@
 	} );
 
 	// Layout
-	wp.customize( 'layout', function( value ) {		
+	wp.customize( 'layout', function( value ) {
 		value.bind( function( newval ) {
 			if ( 'layout-wide' === newval ) {
-				$( 'body' ).removeClass( 'layout-boxed' ).addClass( 'layout-wide' );			
+				$( 'body' ).removeClass( 'layout-boxed' ).addClass( 'layout-wide' );
 			}
 			else {
 				$( 'body' ).addClass( 'layout-boxed' ).removeClass( 'layout-wide' );
@@ -260,10 +260,10 @@
 
 	//  Update colours
 	wp.customize( 'accent_colour', function( value ) {
-		value.bind( function( newval ) {			
-			updateAccentColour( newval );			
+		value.bind( function( newval ) {
+			updateAccentColour( newval );
 		} );
-	} );	
+	} );
 	wp.customize( 'background_colour', function( value ) {
 		value.bind( function( newval ) {
 			updateBackgroundColour( newval );
@@ -283,7 +283,7 @@
 		value.bind( function( newval ) {
 			updateFooterTextColour( newval );
 		});
-	} );	
+	} );
 
 	// Textures
 	wp.customize( 'body_background', function( value ) {
@@ -385,19 +385,19 @@
 	});
 
     /**************************************
-     * 
+     *
      * Do stuff when the document has loaded.
-     * 
+     *
      **************************************/
 
     $( document ).ready( function() {
         var $logo = $('.site-identity img');
 
         logo_dimensions = {
-            height : $logo.attr('height'), 
+            height : $logo.attr('height'),
             width : $logo.attr('width'),
             is_retina : wp.customize( 'logo_is_retina' ).get() === true
         };
     } );
 
-} )( jQuery ); 
+} )( jQuery );

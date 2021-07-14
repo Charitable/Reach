@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Reach 1.2.3\n"
+"Project-Id-Version: Reach 1.2.4\n"
 "Report-Msgid-Bugs-To: https://www.wpcharitable.com/\n"
-"POT-Creation-Date: 2021-05-06 02:27:37+00:00\n"
+"POT-Creation-Date: 2021-05-06 03:52:42+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -465,67 +465,67 @@ msgstr ""
 msgid "Is this image retina-ready?"
 msgstr ""
 
-#: inc/charitable/class-reach-charitable.php:106
+#: inc/charitable/class-reach-charitable.php:107
 msgid "Your pledge must be at least the minimum pledge amount."
 msgstr ""
 
-#: inc/charitable/class-reach-charitable.php:107
+#: inc/charitable/class-reach-charitable.php:108
 msgid "Years"
 msgstr ""
 
-#: inc/charitable/class-reach-charitable.php:108
+#: inc/charitable/class-reach-charitable.php:109
 msgid "Months"
 msgstr ""
 
-#: inc/charitable/class-reach-charitable.php:109
+#: inc/charitable/class-reach-charitable.php:110
 msgid "Weeks"
 msgstr ""
 
-#: inc/charitable/class-reach-charitable.php:110
+#: inc/charitable/class-reach-charitable.php:111
 msgid "Days"
 msgstr ""
 
-#: inc/charitable/class-reach-charitable.php:111
+#: inc/charitable/class-reach-charitable.php:112
 msgid "Hours"
 msgstr ""
 
-#: inc/charitable/class-reach-charitable.php:112
+#: inc/charitable/class-reach-charitable.php:113
 msgid "Minutes"
 msgstr ""
 
-#: inc/charitable/class-reach-charitable.php:113
+#: inc/charitable/class-reach-charitable.php:114
 msgid "Seconds"
 msgstr ""
 
-#: inc/charitable/class-reach-charitable.php:114
+#: inc/charitable/class-reach-charitable.php:115
 msgid "Year"
 msgstr ""
 
-#: inc/charitable/class-reach-charitable.php:115
+#: inc/charitable/class-reach-charitable.php:116
 msgid "Month"
 msgstr ""
 
-#: inc/charitable/class-reach-charitable.php:116
+#: inc/charitable/class-reach-charitable.php:117
 msgid "Day"
 msgstr ""
 
-#: inc/charitable/class-reach-charitable.php:117
+#: inc/charitable/class-reach-charitable.php:118
 msgid "Hour"
 msgstr ""
 
-#: inc/charitable/class-reach-charitable.php:118
+#: inc/charitable/class-reach-charitable.php:119
 msgid "Minute"
 msgstr ""
 
-#: inc/charitable/class-reach-charitable.php:119
+#: inc/charitable/class-reach-charitable.php:120
 msgid "Second"
 msgstr ""
 
-#: inc/charitable/class-reach-charitable.php:211
+#: inc/charitable/class-reach-charitable.php:212
 msgid "Donation Receipt"
 msgstr ""
 
-#: inc/charitable/class-reach-charitable.php:213
+#: inc/charitable/class-reach-charitable.php:214
 msgid "Dashboard"
 msgstr ""
 

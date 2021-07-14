@@ -3,8 +3,8 @@ Contributors: WPCharitable, Studio164a
 Donate link: https://www.wpcharitable.com
 Tags: blue, light, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-colors, custom-menu, featured-images, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
 Requires at least: 4.2
-Tested up to: 5.4.2
-Stable tag: 1.2.2
+Tested up to: 5.7.1
+Stable tag: 1.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -91,6 +91,13 @@ Copyright © 2008-2012 Dmitry Baranovskiy (http://raphaeljs.com)
 Copyright © 2008-2012 Sencha Labs (http://sencha.com)
 
 == Change Log ==
+
+= 1.2.4 - 06/05/2021 =
+* Fixed campaign sharing via Twitter. [#88](https://github.com/Charitable/Reach/issues/88)
+* Fixed styling of the modals used in the WordPress dashboard. [#100](https://github.com/Charitable/Reach/issues/100)
+* Improved styling of the Stripe card field, especially in the modal and in small screens. [#97](https://github.com/Charitable/Reach/issues/97)
+* Removed overflow scrollbar shown on posts. [#94](https://github.com/Charitable/Reach/issues/94)
+* Made it easier to switch to different number of columns in the campaign grid. [#93](https://github.com/Charitable/Reach/issues/93)
 
 = 1.2.2 - 04/06/2019 =
 * Fixed styling issue for Stripe credit card field. [#77](https://github.com/Charitable/Reach/issues/77)
